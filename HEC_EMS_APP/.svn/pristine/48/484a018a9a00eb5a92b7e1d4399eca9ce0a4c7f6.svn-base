@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="PSites" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/PSites" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x010094d6ac98570145d881e1d18391a976d6" Name="ListFieldsContentType"><FieldRefs>
+    <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{806e0a15-463b-4489-a418-e13606cd3b2f}" Name="OrgLookup" /><FieldRef ID="{971ab51c-c2f5-4fdb-bfc6-d867f5e1a577}" Name="SiteAddress" /><FieldRef ID="{78e413d5-1e9b-4fef-bdd4-68b718b90af9}" Name="SitePhone" /><FieldRef ID="{6ff7bea8-40d2-4beb-baee-3846fa4d7c43}" Name="SiteCapacity" /><FieldRef ID="{c4d435d5-c145-4771-acdf-770698327ed6}" Name="Facilities1" /><FieldRef ID="{251a6248-8c5d-4816-9dca-145714c0462a}" Name="SiteReps" /><FieldRef ID="{ed602e3b-6e87-473f-bdff-a6c32b7d1ba1}" Name="EventLookup" /><FieldRef ID="{00db9b66-c5b1-4e5a-ba6c-459de4290c1c}" Name="SiteStatus" /><FieldRef ID="{007eaf87-d447-46ed-a210-321ac6b27fe9}" Name="CustomCreatedBy" /><FieldRef ID="{184087dc-d05b-4500-8bf1-3ce6a47a083f}" Name="CustomModifiedBy" /><FieldRef ID="{e42fc051-1d36-48f5-a6d8-dd0fb7fc45f9}" Name="OrgLookupTitle" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    
+      
+      
+      
+      
+      
+      
+    
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="OrgLookup" ID="{806e0a15-463b-4489-a418-e13606cd3b2f}" DisplayName="OrgLookup" Type="Lookup" List="Lists/Organizations" ShowField="ID" Required="TRUE" /><Field Name="SiteAddress" ID="{971ab51c-c2f5-4fdb-bfc6-d867f5e1a577}" DisplayName="SiteAddress" Type="Text" /><Field Name="SitePhone" ID="{78e413d5-1e9b-4fef-bdd4-68b718b90af9}" DisplayName="SitePhone" Type="Text" /><Field Name="SiteCapacity" ID="{6ff7bea8-40d2-4beb-baee-3846fa4d7c43}" DisplayName="SiteCapacity" Type="Number" /><Field Name="Facilities1" ID="{c4d435d5-c145-4771-acdf-770698327ed6}" DisplayName="SiteFacilities" Type="Lookup" /><Field Name="SiteReps" ID="{251a6248-8c5d-4816-9dca-145714c0462a}" DisplayName="SiteRepresentatives" Type="UserMulti" Mult="TRUE" /><Field Name="EventLookup" ID="{ed602e3b-6e87-473f-bdff-a6c32b7d1ba1}" DisplayName="EventLookup" Type="Lookup" List="Lists/Event" ShowField="ID" /><Field Name="SiteStatus" ID="{00db9b66-c5b1-4e5a-ba6c-459de4290c1c}" DisplayName="SiteStatus" Type="Choice">
+        <CHOICES>
+          
+          
+          
+        <CHOICE>New</CHOICE><CHOICE>Approved</CHOICE><CHOICE>Rejected</CHOICE></CHOICES>
+      </Field><Field Name="CustomCreatedBy" ID="{007eaf87-d447-46ed-a210-321ac6b27fe9}" DisplayName="CustomCreatedBy" Type="Text" /><Field Name="CustomModifiedBy" ID="{184087dc-d05b-4500-8bf1-3ce6a47a083f}" DisplayName="CustomModifiedBy" Type="Text" /><Field Name="OrgLookupTitle" ID="{e42fc051-1d36-48f5-a6d8-dd0fb7fc45f9}" DisplayName="OrgLookupTitle" Type="Text" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        
+          <FieldRef Name="ID" /><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="OrgLookup" /><FieldRef Name="SiteAddress" /><FieldRef Name="SitePhone" /><FieldRef Name="SiteCapacity" /><FieldRef Name="Facilities1" /><FieldRef Name="SiteReps" /><FieldRef Name="EventLookup" /><FieldRef Name="SiteStatus" /><FieldRef Name="Created" /><FieldRef Name="Author" /><FieldRef Name="Modified" /><FieldRef Name="Editor" /><FieldRef Name="CustomCreatedBy" /><FieldRef Name="CustomModifiedBy" /><FieldRef Name="OrgLookupTitle" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Content">
+    <File Path="Content\App.css" Url="Content/App.css" ReplaceContent="TRUE" />
+    <File Path="Content\jquery-ui-1.10.2.custom.css" Url="Content/jquery-ui-1.10.2.custom.css" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap.css" Url="Content/bootstrap.css" ReplaceContent="TRUE" />
+    <File Path="Content\jNotify.jquery.css" Url="Content/jNotify.jquery.css" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap-multiEmail.css" Url="Content/bootstrap-multiEmail.css" ReplaceContent="TRUE" />
+    <File Path="Content\bootstrap-tagsinput.css" Url="Content/bootstrap-tagsinput.css" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

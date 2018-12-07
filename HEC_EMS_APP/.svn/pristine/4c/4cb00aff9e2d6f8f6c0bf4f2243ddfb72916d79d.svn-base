@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="EMSUsers" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/EMSUsers" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100110e4e4020f64c01ba17e015d9349def" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{2bf8e34f-8643-4a8e-9ad1-05b320e130db}" Name="Name1" /><FieldRef ID="{7984de53-0870-487f-8126-ba427cc0e4bc}" Name="Address" /><FieldRef ID="{16c90e5f-08fd-48d9-9639-1c6d994f0796}" Name="ContactNumber" /><FieldRef ID="{9812340e-81f3-44de-aacb-15583aa44666}" Name="CNIC" /><FieldRef ID="{ca88b3c4-4082-4b96-b92c-498e1690e215}" Name="Occupation" /><FieldRef ID="{8305241e-e234-4392-8270-40a0453afe6c}" Name="UserDiscipline" /><FieldRef ID="{04954130-9a7b-41d1-b6d9-078f1d0a58f7}" Name="InterestedEventType" /><FieldRef ID="{2433d9f3-368d-4954-86c8-84cffa9ae04a}" Name="UserProvince" /><FieldRef ID="{d81f7893-c416-45b7-9b0a-227531a7acfd}" Name="Status" /><FieldRef ID="{a9c25880-7c56-44f5-8170-34baab01f66d}" Name="FieldInterest" /><FieldRef ID="{d981599a-be8b-47f1-b3d1-c1f689d44bde}" Name="ProvinceRegion" /><FieldRef ID="{253f96d8-42b9-46a3-b3a1-6455b1ecb6af}" Name="UniOrgTitle" /><FieldRef ID="{043b740f-65ad-4722-b6a2-b028f54c173e}" Name="FieldSubInterest" /><FieldRef ID="{4a722dd4-d406-4356-93f9-2550b8f50dd0}" Name="FirstName" /><FieldRef ID="{6c3d47fd-3704-4d75-ae10-589b4e9e9216}" Name="LastName" /><FieldRef ID="{92731109-5a2a-4aba-ae63-5db29e5bf733}" Name="Country" /><FieldRef ID="{b60478c1-2663-49a5-a65d-f72a2a74fb71}" Name="City" /><FieldRef ID="{989bbd32-d0bf-4751-87ef-a0d1e7d88881}" Name="Region_x002f_Province" /><FieldRef ID="{d22c7b2f-8aa5-4729-a0c4-6c55409acb58}" Name="prefix" /><FieldRef ID="{087e525f-0925-4b67-97ab-15011d45b125}" Name="PassportNumber" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="Name1" ID="{2bf8e34f-8643-4a8e-9ad1-05b320e130db}" DisplayName="Name" Type="Text" /><Field Name="Address" ID="{7984de53-0870-487f-8126-ba427cc0e4bc}" DisplayName="UserAddress" Type="Text" /><Field Name="ContactNumber" ID="{16c90e5f-08fd-48d9-9639-1c6d994f0796}" DisplayName="ContactNumber" Type="Text" /><Field Name="CNIC" ID="{9812340e-81f3-44de-aacb-15583aa44666}" DisplayName="CNIC" Type="Text" /><Field Name="Occupation" ID="{ca88b3c4-4082-4b96-b92c-498e1690e215}" DisplayName="Occupation" Type="Text" /><Field Name="UserDiscipline" ID="{8305241e-e234-4392-8270-40a0453afe6c}" DisplayName="UserDiscipline" Type="Text" /><Field Name="InterestedEventType" ID="{04954130-9a7b-41d1-b6d9-078f1d0a58f7}" DisplayName="InterestedEventType" Type="Text" /><Field Name="UserProvince" ID="{2433d9f3-368d-4954-86c8-84cffa9ae04a}" DisplayName="UserProvince" Type="Text" /><Field Name="Status" ID="{d81f7893-c416-45b7-9b0a-227531a7acfd}" DisplayName="Status" Type="Choice" /><Field Name="FieldInterest" ID="{a9c25880-7c56-44f5-8170-34baab01f66d}" DisplayName="FieldInterest" Type="Text" /><Field Name="ProvinceRegion" ID="{d981599a-be8b-47f1-b3d1-c1f689d44bde}" DisplayName="ProvinceRegion" Type="Text" /><Field Name="UniOrgTitle" ID="{253f96d8-42b9-46a3-b3a1-6455b1ecb6af}" DisplayName="UniOrgTitle" Type="Text" /><Field Name="FieldSubInterest" ID="{043b740f-65ad-4722-b6a2-b028f54c173e}" DisplayName="FieldSubInterest" Type="Text" /><Field ID="{4a722dd4-d406-4356-93f9-2550b8f50dd0}" Name="FirstName" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="FirstName" Group="$Resources:core,Person_Event_Columns;" DisplayName="$Resources:core,First_Name;" Type="Text" /><Field Name="LastName" ID="{6c3d47fd-3704-4d75-ae10-589b4e9e9216}" DisplayName="Last Name" Type="Text" /><Field Name="Country" ID="{92731109-5a2a-4aba-ae63-5db29e5bf733}" DisplayName="Country" Type="Text" /><Field Name="City" ID="{b60478c1-2663-49a5-a65d-f72a2a74fb71}" DisplayName="City" Type="Text" /><Field Name="Region_x002f_Province" ID="{989bbd32-d0bf-4751-87ef-a0d1e7d88881}" DisplayName="Region/Province" Type="Text" /><Field Name="prefix" ID="{d22c7b2f-8aa5-4729-a0c4-6c55409acb58}" DisplayName="prefix" Type="Text" /><Field Name="PassportNumber" ID="{087e525f-0925-4b67-97ab-15011d45b125}" DisplayName="PassportNumber" Type="Text" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        
+          
+          
+          
+          
+          
+          
+          
+          <FieldRef Name="ID" /><FieldRef Name="LinkTitle">
+        </FieldRef><FieldRef Name="Name1" /><FieldRef Name="ContactNumber" /><FieldRef Name="CNIC" /><FieldRef Name="Occupation" /><FieldRef Name="UserDiscipline" /><FieldRef Name="InterestedEventType" /><FieldRef Name="UserProvince" /><FieldRef Name="Status" /><FieldRef Name="Created" /><FieldRef Name="Author" /><FieldRef Name="Modified" /><FieldRef Name="Editor" /><FieldRef Name="FieldInterest" /><FieldRef Name="ProvinceRegion" /><FieldRef Name="UniOrgTitle" /><FieldRef Name="FieldSubInterest" /><FieldRef Name="FirstName" /><FieldRef Name="LastName" /><FieldRef Name="Country" /><FieldRef Name="City" /><FieldRef Name="Region_x002f_Province" /><FieldRef Name="prefix" /><FieldRef Name="PassportNumber" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

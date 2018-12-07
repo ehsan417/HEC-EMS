@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="EventFeedback" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/EventFeedback" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100bb09ef70e528499ea479e3c2df734e3d" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{e9f0796f-880f-4342-9357-732e959671b8}" Name="EventID" /><FieldRef ID="{a056b3fe-648d-43ef-8c9c-b3b35fa8a8c3}" Name="EmployeeID" /><FieldRef ID="{74fb9ac1-dfec-4f3c-9059-8dc2b5a040fa}" Name="Question1" /><FieldRef ID="{408de4e8-4b3d-438b-876e-0bd125465b5e}" Name="Question2" /><FieldRef ID="{e6c23d8a-368a-49dd-b18e-d5077d87278e}" Name="Question3" /><FieldRef ID="{4aee0779-6b52-41fc-80a2-441068a8fc24}" Name="Question4" /><FieldRef ID="{9a9cf0f8-5bd5-483b-95f7-e4bac20c5f9b}" Name="Question5" /><FieldRef ID="{5e8d2e53-00ab-487b-bda7-e4d2539e3baa}" Name="FeedbackComment" /><FieldRef ID="{b383efc3-372a-4236-8427-bc143f6efe37}" Name="EmployeeName" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="EventID" ID="{e9f0796f-880f-4342-9357-732e959671b8}" DisplayName="EventID" Type="Lookup" List="Lists/EventList" ShowField="ID" /><Field Name="EmployeeID" ID="{a056b3fe-648d-43ef-8c9c-b3b35fa8a8c3}" DisplayName="EmployeeID" Type="Text" /><Field Name="Question1" ID="{74fb9ac1-dfec-4f3c-9059-8dc2b5a040fa}" DisplayName="Question1" Type="Choice" /><Field Name="Question2" ID="{408de4e8-4b3d-438b-876e-0bd125465b5e}" DisplayName="Question2" Type="Choice" /><Field Name="Question3" ID="{e6c23d8a-368a-49dd-b18e-d5077d87278e}" DisplayName="Question3" Type="Choice" /><Field Name="Question4" ID="{4aee0779-6b52-41fc-80a2-441068a8fc24}" DisplayName="Question4" Type="Choice" /><Field Name="Question5" ID="{9a9cf0f8-5bd5-483b-95f7-e4bac20c5f9b}" DisplayName="Question5" Type="Choice" /><Field Name="FeedbackComment" ID="{5e8d2e53-00ab-487b-bda7-e4d2539e3baa}" DisplayName="FeedbackComment" Type="Text" /><Field Name="EmployeeName" ID="{b383efc3-372a-4236-8427-bc143f6efe37}" DisplayName="EmployeeName" Type="Text" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="ID" /><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="EventID" /><FieldRef Name="EmployeeID" /><FieldRef Name="Question1" /><FieldRef Name="Question2" /><FieldRef Name="Question3" /><FieldRef Name="Question4" /><FieldRef Name="Question5" /><FieldRef Name="FeedbackComment" /><FieldRef Name="Created" /><FieldRef Name="Author" /><FieldRef Name="Modified" /><FieldRef Name="Editor" /><FieldRef Name="EmployeeName" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

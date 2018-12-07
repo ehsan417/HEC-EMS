@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="EventFacilities" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/EventFacilities" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100a9746f08c6c2462f84f26b275c12eedb" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{2019fe94-623c-42ec-b7c9-9f6684151684}" Name="EventLookup" /><FieldRef ID="{f79a521a-0daf-47e9-8ffb-01bb753a0db7}" Name="Internet" /><FieldRef ID="{468d8a35-ea79-4ab4-b00e-65ff1ee08ef9}" Name="VideoCon" /><FieldRef ID="{0f138dfd-c406-4e80-8582-e7a76a1413a5}" Name="MeetingRoom" /><FieldRef ID="{b780f628-c5d4-4dde-91fd-fbc5860dbf29}" Name="AudioMic" /><FieldRef ID="{3889290f-c1ce-4a0b-9f5a-d8c9f27b759e}" Name="LCD" /><FieldRef ID="{9ffa8907-02dd-4a84-a8de-268a23c2b161}" Name="Projector" /><FieldRef ID="{ec1eac26-ffff-41cd-9d39-7d1069385b35}" Name="Parking" /><FieldRef ID="{ee7f6a97-bffd-4e41-9c0f-80bca4ccc8ad}" Name="Accomodation" /><FieldRef ID="{e0e700c1-69f8-4c45-838d-ace245b52ae7}" Name="ACHeating" /><FieldRef ID="{117d7169-0071-4951-bb27-a37de2f469fd}" Name="Refreshments" /><FieldRef ID="{8421215c-3801-47f8-898c-b898d010ebfc}" Name="Catering" /><FieldRef ID="{07ca022a-3e3f-4dad-bdf3-2c8e523016b4}" Name="LabFacilities" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="EventLookup" ID="{2019fe94-623c-42ec-b7c9-9f6684151684}" DisplayName="EventLookup" Type="Lookup" List="Lists/EventList" ShowField="ID" /><Field Name="Internet" ID="{f79a521a-0daf-47e9-8ffb-01bb753a0db7}" DisplayName="Internet" Type="Boolean" /><Field Name="VideoCon" ID="{468d8a35-ea79-4ab4-b00e-65ff1ee08ef9}" DisplayName="VideoCon" Type="Boolean" /><Field Name="MeetingRoom" ID="{0f138dfd-c406-4e80-8582-e7a76a1413a5}" DisplayName="MeetingRoom" Type="Boolean" /><Field Name="AudioMic" ID="{b780f628-c5d4-4dde-91fd-fbc5860dbf29}" DisplayName="AudioMic" Type="Boolean" /><Field Name="LCD" ID="{3889290f-c1ce-4a0b-9f5a-d8c9f27b759e}" DisplayName="LCD" Type="Boolean" /><Field Name="Projector" ID="{9ffa8907-02dd-4a84-a8de-268a23c2b161}" DisplayName="Projector" Type="Boolean" /><Field Name="Parking" ID="{ec1eac26-ffff-41cd-9d39-7d1069385b35}" DisplayName="Parking" Type="Boolean" /><Field Name="Accomodation" ID="{ee7f6a97-bffd-4e41-9c0f-80bca4ccc8ad}" DisplayName="Accomodation" Type="Boolean" /><Field Name="ACHeating" ID="{e0e700c1-69f8-4c45-838d-ace245b52ae7}" DisplayName="ACHeating" Type="Boolean" /><Field Name="Refreshments" ID="{117d7169-0071-4951-bb27-a37de2f469fd}" DisplayName="Refreshments" Type="Boolean" /><Field Name="Catering" ID="{8421215c-3801-47f8-898c-b898d010ebfc}" DisplayName="Catering" Type="Boolean" /><Field Name="LabFacilities" ID="{07ca022a-3e3f-4dad-bdf3-2c8e523016b4}" DisplayName="LabFacilities" Type="Boolean" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="EventLookup" /><FieldRef Name="Internet" /><FieldRef Name="VideoCon" /><FieldRef Name="MeetingRoom" /><FieldRef Name="AudioMic" /><FieldRef Name="LCD" /><FieldRef Name="Projector" /><FieldRef Name="Parking" /><FieldRef Name="Accomodation" /><FieldRef Name="ACHeating" /><FieldRef Name="Refreshments" /><FieldRef Name="Catering" /><FieldRef Name="LabFacilities" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

@@ -1,0 +1,1 @@
+C:\Users\spfarmadmin\Documents\Visual Studio 2013\Projects\Event manager app\C#\SP_TrainingEventManager_js\bin\Debug\EMS-TrainingApp.debugapp

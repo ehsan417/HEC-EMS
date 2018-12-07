@@ -1,0 +1,1461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F6B6911-69FE-43FD-9236-A6B799B42DBC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SP_TrainingEventManager_js</RootNamespace>
+    <AssemblyName>SP_TrainingEventManager_js</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{c3934b81-d19d-4826-a738-4fbd76b90862}</AppFeaturePartId>
+    <WspPartId>{7c895def-a652-4641-bd6c-98108ea9e9b8}</WspPartId>
+    <WorkflowPartId>{25df75f1-d64d-4706-b700-34f6fb404e4f}</WorkflowPartId>
+    <CspkgPartId>{d5e05f76-b2d5-4aa3-af9a-b7820b2cdbd8}</CspkgPartId>
+    <SqlPackagePartId>{f0db56ab-3ee4-4546-a4bb-5153f5fee3dc}</SqlPackagePartId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="codebase\dhtmlxscheduler.css" />
+    <Content Include="codebase\dhtmlxscheduler.js" />
+    <Content Include="codebase\dhtmlxscheduler_classic.css" />
+    <Content Include="codebase\dhtmlxscheduler_flat.css" />
+    <Content Include="codebase\dhtmlxscheduler_glossy.css" />
+    <Content Include="codebase\ext\dhtmlxscheduler_active_links.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_agenda_view.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_all_timed.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_collision.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_container_autoresize.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_cookie.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_editors.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_expand.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_grid_view.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_html_templates.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_key_nav.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_layer.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_limit.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_map_view.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_minical.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_monthheight.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_multisection.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_multiselect.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_multisource.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_mvc.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_offline.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_outerdrag.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_pdf.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_quick_info.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_readonly.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_recurring.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_serialize.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_timeline.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_tooltip.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_treetimeline.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_units.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_url.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_week_agenda.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_wp.js" />
+    <Content Include="codebase\ext\dhtmlxscheduler_year_view.js" />
+    <Content Include="codebase\imgs\buttons.png" />
+    <Content Include="codebase\imgs\but_repeat.gif" />
+    <Content Include="codebase\imgs\calendar.gif" />
+    <Content Include="codebase\imgs\clock_big.gif" />
+    <Content Include="codebase\imgs\clock_small.gif" />
+    <Content Include="codebase\imgs\collapse_expand_icon.gif" />
+    <Content Include="codebase\imgs\controls.gif" />
+    <Content Include="codebase\imgs\databg.png" />
+    <Content Include="codebase\imgs\databg_now.png" />
+    <Content Include="codebase\imgs\export_ical.png" />
+    <Content Include="codebase\imgs\export_pdf.png" />
+    <Content Include="codebase\imgs\icon.png" />
+    <Content Include="codebase\imgs\images.png" />
+    <Content Include="codebase\imgs\loading.gif" />
+    <Content Include="codebase\imgs\resize_dots.png" />
+    <Content Include="codebase\imgs_dhx_terrace\arrow_left.png" />
+    <Content Include="codebase\imgs_dhx_terrace\arrow_right.png" />
+    <Content Include="codebase\imgs_dhx_terrace\but_repeat.gif" />
+    <Content Include="codebase\imgs_dhx_terrace\calendar.gif" />
+    <Content Include="codebase\imgs_dhx_terrace\clock_big.gif" />
+    <Content Include="codebase\imgs_dhx_terrace\clock_small.gif" />
+    <Content Include="codebase\imgs_dhx_terrace\close_icon.png" />
+    <Content Include="codebase\imgs_dhx_terrace\collapse_expand_icon.gif" />
+    <Content Include="codebase\imgs_dhx_terrace\controls.png" />
+    <Content Include="codebase\imgs_dhx_terrace\databg.png" />
+    <Content Include="codebase\imgs_dhx_terrace\databg_now.png" />
+    <Content Include="codebase\imgs_dhx_terrace\export_ical.png" />
+    <Content Include="codebase\imgs_dhx_terrace\export_pdf.png" />
+    <Content Include="codebase\imgs_dhx_terrace\resize_dots.png" />
+    <Content Include="codebase\imgs_dhx_terrace\resizing.png" />
+    <Content Include="codebase\imgs_flat\agenda_bg.gif" />
+    <Content Include="codebase\imgs_flat\arrow_left.png" />
+    <Content Include="codebase\imgs_flat\arrow_right.png" />
+    <Content Include="codebase\imgs_flat\but_repeat.gif" />
+    <Content Include="codebase\imgs_flat\calendar.gif" />
+    <Content Include="codebase\imgs_flat\clock.png" />
+    <Content Include="codebase\imgs_flat\clock_big.gif" />
+    <Content Include="codebase\imgs_flat\clock_small.gif" />
+    <Content Include="codebase\imgs_flat\close_icon.png" />
+    <Content Include="codebase\imgs_flat\collapse_expand_icon.gif" />
+    <Content Include="codebase\imgs_flat\controls.png" />
+    <Content Include="codebase\imgs_flat\databg.png" />
+    <Content Include="codebase\imgs_flat\databg_now.png" />
+    <Content Include="codebase\imgs_flat\export_ical.png" />
+    <Content Include="codebase\imgs_flat\export_pdf.png" />
+    <Content Include="codebase\imgs_flat\resize_dots.png" />
+    <Content Include="codebase\imgs_flat\resizing.png" />
+    <Content Include="codebase\imgs_glossy\blue_tab.png" />
+    <Content Include="codebase\imgs_glossy\blue_tab_wide.png" />
+    <Content Include="codebase\imgs_glossy\buttons.gif" />
+    <Content Include="codebase\imgs_glossy\but_repeat.gif" />
+    <Content Include="codebase\imgs_glossy\calendar.gif" />
+    <Content Include="codebase\imgs_glossy\clock_big.png" />
+    <Content Include="codebase\imgs_glossy\clock_small.png" />
+    <Content Include="codebase\imgs_glossy\collapse_expand_icon.gif" />
+    <Content Include="codebase\imgs_glossy\controlls5.png" />
+    <Content Include="codebase\imgs_glossy\databg.png" />
+    <Content Include="codebase\imgs_glossy\databg_now.png" />
+    <Content Include="codebase\imgs_glossy\event-bg.png" />
+    <Content Include="codebase\imgs_glossy\export_ical.png" />
+    <Content Include="codebase\imgs_glossy\export_pdf.png" />
+    <Content Include="codebase\imgs_glossy\icon.png" />
+    <Content Include="codebase\imgs_glossy\left-separator.png" />
+    <Content Include="codebase\imgs_glossy\left-time-bg.png" />
+    <Content Include="codebase\imgs_glossy\lightbox.png" />
+    <Content Include="codebase\imgs_glossy\loading.gif" />
+    <Content Include="codebase\imgs_glossy\move.png" />
+    <Content Include="codebase\imgs_glossy\multi-days-bg.png" />
+    <Content Include="codebase\imgs_glossy\second-top-days-bg.png" />
+    <Content Include="codebase\imgs_glossy\top-days-bg.png" />
+    <Content Include="codebase\imgs_glossy\top-separator.gif" />
+    <Content Include="codebase\imgs_glossy\white_tab.png" />
+    <Content Include="codebase\imgs_glossy\white_tab_wide.png" />
+    <Content Include="codebase\locale\locale_ar.js" />
+    <Content Include="codebase\locale\locale_be.js" />
+    <Content Include="codebase\locale\locale_ca.js" />
+    <Content Include="codebase\locale\locale_cn.js" />
+    <Content Include="codebase\locale\locale_cs.js" />
+    <Content Include="codebase\locale\locale_da.js" />
+    <Content Include="codebase\locale\locale_de.js" />
+    <Content Include="codebase\locale\locale_el.js" />
+    <Content Include="codebase\locale\locale_en.js" />
+    <Content Include="codebase\locale\locale_es.js" />
+    <Content Include="codebase\locale\locale_fi.js" />
+    <Content Include="codebase\locale\locale_fr.js" />
+    <Content Include="codebase\locale\locale_he.js" />
+    <Content Include="codebase\locale\locale_hu.js" />
+    <Content Include="codebase\locale\locale_id.js" />
+    <Content Include="codebase\locale\locale_it.js" />
+    <Content Include="codebase\locale\locale_jp.js" />
+    <Content Include="codebase\locale\locale_nb.js" />
+    <Content Include="codebase\locale\locale_nl.js" />
+    <Content Include="codebase\locale\locale_no.js" />
+    <Content Include="codebase\locale\locale_pl.js" />
+    <Content Include="codebase\locale\locale_pt.js" />
+    <Content Include="codebase\locale\locale_ro.js" />
+    <Content Include="codebase\locale\locale_ru.js" />
+    <Content Include="codebase\locale\locale_si.js" />
+    <Content Include="codebase\locale\locale_sk.js" />
+    <Content Include="codebase\locale\locale_sv.js" />
+    <Content Include="codebase\locale\locale_tr.js" />
+    <Content Include="codebase\locale\locale_ua.js" />
+    <Content Include="codebase\locale\recurring\locale_recurring_be.js" />
+    <Content Include="codebase\locale\recurring\locale_recurring_cn.js" />
+    <Content Include="codebase\locale\recurring\locale_recurring_cs.js" />
+    <Content Include="codebase\locale\recurring\locale_recurring_da.js" />
+    <Content Include="codebase\locale\recurring\locale_recurring_de.js" />
+    <Content Include="codebase\locale\recurring\locale_recurring_el.js" />
+    <Content Include="codebase\locale\recurring\locale_recurring_en.js" />
+    <Content Include="codebase\locale\recurring\locale_recurring_es.js" />
+    <Content Include="codebase\locale\recurring\locale_recurring_fi.js" />
+    <Content Include="codebase\locale\recurring\locale_recurring_fr.js" />
+    <Content Include="codebase\locale\recurring\locale_recurring_it.js" />
+    <Content Include="codebase\locale\recurring\locale_recurring_nb.js" />
+    <Content Include="codebase\locale\recurring\locale_recurring_nl.js" />
+    <Content Include="codebase\locale\recurring\locale_recurring_pl.js" />
+    <Content Include="codebase\locale\recurring\locale_recurring_pt.js" />
+    <Content Include="codebase\locale\recurring\locale_recurring_ro.js" />
+    <Content Include="codebase\locale\recurring\locale_recurring_ru.js" />
+    <Content Include="codebase\locale\recurring\locale_recurring_sk.js" />
+    <Content Include="codebase\locale\recurring\locale_recurring_sv.js" />
+    <Content Include="codebase\locale\recurring\locale_recurring_ua.js" />
+    <Content Include="codebase\locale\recurring\repeat_template_be.html" />
+    <Content Include="codebase\locale\recurring\repeat_template_cn.html" />
+    <Content Include="codebase\locale\recurring\repeat_template_de.html" />
+    <Content Include="codebase\locale\recurring\repeat_template_el.html" />
+    <Content Include="codebase\locale\recurring\repeat_template_en.html" />
+    <Content Include="codebase\locale\recurring\repeat_template_es.html" />
+    <Content Include="codebase\locale\recurring\repeat_template_fr.html" />
+    <Content Include="codebase\locale\recurring\repeat_template_it.html" />
+    <Content Include="codebase\locale\recurring\repeat_template_nl.html" />
+    <Content Include="codebase\locale\recurring\repeat_template_ro.html" />
+    <Content Include="codebase\locale\recurring\repeat_template_ru.html" />
+    <Content Include="codebase\locale\recurring\repeat_template_sk.html" />
+    <Content Include="codebase\Scripts\bootstrap-theme.min.css" />
+    <Content Include="codebase\Scripts\bootstrap.min.css" />
+    <Content Include="codebase\Scripts\bootstrap.min.js" />
+    <Content Include="codebase\sources\dhtmlxscheduler.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_active_links.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_agenda_view.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_all_timed.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_collision.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_container_autoresize.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_cookie.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_editors.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_expand.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_grid_view.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_html_templates.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_key_nav.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_layer.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_limit.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_map_view.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_minical.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_monthheight.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_multisection.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_multiselect.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_multisource.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_mvc.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_offline.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_outerdrag.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_pdf.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_quick_info.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_readonly.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_recurring.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_serialize.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_timeline.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_tooltip.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_treetimeline.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_units.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_url.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_week_agenda.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_wp.js" />
+    <Content Include="codebase\sources\ext\dhtmlxscheduler_year_view.js" />
+    <Content Include="codebase\sources\skins\dhtmlxscheduler.css" />
+    <Content Include="codebase\sources\skins\dhtmlxscheduler_classic.css" />
+    <Content Include="codebase\sources\skins\dhtmlxscheduler_flat.css" />
+    <Content Include="codebase\sources\skins\dhtmlxscheduler_glossy.css" />
+    <Content Include="Content\bootstrap-multiEmail.css" />
+    <Content Include="Content\bootstrap-tagsinput.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\jNotify.jquery.css" />
+    <Content Include="Elements.xml" />
+    <Content Include="EMSUsers\Elements.xml" />
+    <Content Include="EMSUsers\EMSUsersInstance\Elements.xml" />
+    <Content Include="EMSUsers\Schema.xml" />
+    <Content Include="EventDomainMapList\Elements.xml" />
+    <Content Include="EventDomainMapList\EventDomainMapListInstance\Elements.xml" />
+    <Content Include="EventDomainMapList\Schema.xml" />
+    <Content Include="EventFacilities\Elements.xml" />
+    <Content Include="EventFacilities\EventFacilitiesInstance\Elements.xml" />
+    <Content Include="EventFacilities\Schema.xml" />
+    <Content Include="EventFeedback\Elements.xml" />
+    <Content Include="EventFeedback\EventFeedbackInstance\Elements.xml" />
+    <Content Include="EventFeedback\Schema.xml" />
+    <Content Include="EventSubDomainMapList\Elements.xml" />
+    <Content Include="EventSubDomainMapList\EventSubDomainMapListInstance\Elements.xml" />
+    <Content Include="EventSubDomainMapList\Schema.xml" />
+    <Content Include="ExportPdf\html2canvas.js" />
+    <Content Include="ExportPdf\jquery.base64.js" />
+    <Content Include="ExportPdf\jspdf\jspdf.js" />
+    <Content Include="ExportPdf\jspdf\libs\base64.js" />
+    <Content Include="ExportPdf\jspdf\libs\sprintf.js" />
+    <Content Include="ExportPdf\tableExport.js" />
+    <Content Include="fonts\glyphicons-1-glass.png" />
+    <Content Include="fonts\glyphicons-10-magic.png" />
+    <Content Include="fonts\glyphicons-100-vector-path-all.png" />
+    <Content Include="fonts\glyphicons-101-font.png" />
+    <Content Include="fonts\glyphicons-102-italic.png" />
+    <Content Include="fonts\glyphicons-103-bold.png" />
+    <Content Include="fonts\glyphicons-104-text-underline.png" />
+    <Content Include="fonts\glyphicons-105-text-strike.png" />
+    <Content Include="fonts\glyphicons-106-text-height.png" />
+    <Content Include="fonts\glyphicons-107-text-width.png" />
+    <Content Include="fonts\glyphicons-108-text-resize.png" />
+    <Content Include="fonts\glyphicons-109-left-indent.png" />
+    <Content Include="fonts\glyphicons-11-envelope.png" />
+    <Content Include="fonts\glyphicons-110-right-indent.png" />
+    <Content Include="fonts\glyphicons-111-align-left.png" />
+    <Content Include="fonts\glyphicons-112-align-center.png" />
+    <Content Include="fonts\glyphicons-113-align-right.png" />
+    <Content Include="fonts\glyphicons-114-justify.png" />
+    <Content Include="fonts\glyphicons-115-list.png" />
+    <Content Include="fonts\glyphicons-116-text-smaller.png" />
+    <Content Include="fonts\glyphicons-117-text-bigger.png" />
+    <Content Include="fonts\glyphicons-118-embed.png" />
+    <Content Include="fonts\glyphicons-119-embed-close.png" />
+    <Content Include="fonts\glyphicons-12-camera.png" />
+    <Content Include="fonts\glyphicons-120-table.png" />
+    <Content Include="fonts\glyphicons-121-message-full.png" />
+    <Content Include="fonts\glyphicons-122-message-empty.png" />
+    <Content Include="fonts\glyphicons-123-message-in.png" />
+    <Content Include="fonts\glyphicons-124-message-out.png" />
+    <Content Include="fonts\glyphicons-125-message-plus.png" />
+    <Content Include="fonts\glyphicons-126-message-minus.png" />
+    <Content Include="fonts\glyphicons-127-message-ban.png" />
+    <Content Include="fonts\glyphicons-128-message-flag.png" />
+    <Content Include="fonts\glyphicons-129-message-lock.png" />
+    <Content Include="fonts\glyphicons-13-heart.png" />
+    <Content Include="fonts\glyphicons-130-message-new.png" />
+    <Content Include="fonts\glyphicons-131-inbox.png" />
+    <Content Include="fonts\glyphicons-132-inbox-plus.png" />
+    <Content Include="fonts\glyphicons-133-inbox-minus.png" />
+    <Content Include="fonts\glyphicons-134-inbox-lock.png" />
+    <Content Include="fonts\glyphicons-135-inbox-in.png" />
+    <Content Include="fonts\glyphicons-136-inbox-out.png" />
+    <Content Include="fonts\glyphicons-137-cogwheel.png" />
+    <Content Include="fonts\glyphicons-138-cogwheels.png" />
+    <Content Include="fonts\glyphicons-139-picture.png" />
+    <Content Include="fonts\glyphicons-14-beach-umbrella.png" />
+    <Content Include="fonts\glyphicons-140-adjust-alt.png" />
+    <Content Include="fonts\glyphicons-141-database-lock.png" />
+    <Content Include="fonts\glyphicons-142-database-plus.png" />
+    <Content Include="fonts\glyphicons-143-database-minus.png" />
+    <Content Include="fonts\glyphicons-144-database-ban.png" />
+    <Content Include="fonts\glyphicons-145-folder-open.png" />
+    <Content Include="fonts\glyphicons-146-folder-plus.png" />
+    <Content Include="fonts\glyphicons-147-folder-minus.png" />
+    <Content Include="fonts\glyphicons-148-folder-lock.png" />
+    <Content Include="fonts\glyphicons-149-folder-flag.png" />
+    <Content Include="fonts\glyphicons-15-train.png" />
+    <Content Include="fonts\glyphicons-150-folder-new.png" />
+    <Content Include="fonts\glyphicons-151-edit.png" />
+    <Content Include="fonts\glyphicons-152-new-window.png" />
+    <Content Include="fonts\glyphicons-153-check.png" />
+    <Content Include="fonts\glyphicons-154-unchecked.png" />
+    <Content Include="fonts\glyphicons-155-more-windows.png" />
+    <Content Include="fonts\glyphicons-156-show-big-thumbnails.png" />
+    <Content Include="fonts\glyphicons-157-show-thumbnails.png" />
+    <Content Include="fonts\glyphicons-158-show-thumbnails-with-lines.png" />
+    <Content Include="fonts\glyphicons-159-show-lines.png" />
+    <Content Include="fonts\glyphicons-16-print.png" />
+    <Content Include="fonts\glyphicons-160-playlist.png" />
+    <Content Include="fonts\glyphicons-161-imac.png" />
+    <Content Include="fonts\glyphicons-162-macbook.png" />
+    <Content Include="fonts\glyphicons-163-ipad.png" />
+    <Content Include="fonts\glyphicons-164-iphone.png" />
+    <Content Include="fonts\glyphicons-165-iphone-transfer.png" />
+    <Content Include="fonts\glyphicons-166-iphone-exchange.png" />
+    <Content Include="fonts\glyphicons-167-ipod.png" />
+    <Content Include="fonts\glyphicons-168-ipod-shuffle.png" />
+    <Content Include="fonts\glyphicons-169-ear-plugs.png" />
+    <Content Include="fonts\glyphicons-17-bin.png" />
+    <Content Include="fonts\glyphicons-170-record.png" />
+    <Content Include="fonts\glyphicons-171-step-backward.png" />
+    <Content Include="fonts\glyphicons-172-fast-backward.png" />
+    <Content Include="fonts\glyphicons-173-rewind.png" />
+    <Content Include="fonts\glyphicons-174-play.png" />
+    <Content Include="fonts\glyphicons-175-pause.png" />
+    <Content Include="fonts\glyphicons-176-stop.png" />
+    <Content Include="fonts\glyphicons-177-forward.png" />
+    <Content Include="fonts\glyphicons-178-fast-forward.png" />
+    <Content Include="fonts\glyphicons-179-step-forward.png" />
+    <Content Include="fonts\glyphicons-18-music.png" />
+    <Content Include="fonts\glyphicons-180-eject.png" />
+    <Content Include="fonts\glyphicons-181-facetime-video.png" />
+    <Content Include="fonts\glyphicons-182-download-alt.png" />
+    <Content Include="fonts\glyphicons-183-mute.png" />
+    <Content Include="fonts\glyphicons-184-volume-down.png" />
+    <Content Include="fonts\glyphicons-185-volume-up.png" />
+    <Content Include="fonts\glyphicons-186-screenshot.png" />
+    <Content Include="fonts\glyphicons-187-move.png" />
+    <Content Include="fonts\glyphicons-188-more.png" />
+    <Content Include="fonts\glyphicons-189-brightness-reduce.png" />
+    <Content Include="fonts\glyphicons-19-note.png" />
+    <Content Include="fonts\glyphicons-190-brightness-increase.png" />
+    <Content Include="fonts\glyphicons-191-circle-plus.png" />
+    <Content Include="fonts\glyphicons-192-circle-minus.png" />
+    <Content Include="fonts\glyphicons-193-circle-remove.png" />
+    <Content Include="fonts\glyphicons-194-circle-ok.png" />
+    <Content Include="fonts\glyphicons-195-circle-question-mark.png" />
+    <Content Include="fonts\glyphicons-196-circle-info.png" />
+    <Content Include="fonts\glyphicons-197-circle-exclamation-mark.png" />
+    <Content Include="fonts\glyphicons-198-remove.png" />
+    <Content Include="fonts\glyphicons-199-ok.png" />
+    <Content Include="fonts\glyphicons-2-leaf.png" />
+    <Content Include="fonts\glyphicons-20-heart-empty.png" />
+    <Content Include="fonts\glyphicons-200-ban.png" />
+    <Content Include="fonts\glyphicons-201-download.png" />
+    <Content Include="fonts\glyphicons-202-upload.png" />
+    <Content Include="fonts\glyphicons-203-shopping-cart.png" />
+    <Content Include="fonts\glyphicons-204-lock.png" />
+    <Content Include="fonts\glyphicons-205-unlock.png" />
+    <Content Include="fonts\glyphicons-206-electricity.png" />
+    <Content Include="fonts\glyphicons-207-ok-2.png" />
+    <Content Include="fonts\glyphicons-208-remove-2.png" />
+    <Content Include="fonts\glyphicons-209-cart-out.png" />
+    <Content Include="fonts\glyphicons-21-home.png" />
+    <Content Include="fonts\glyphicons-210-cart-in.png" />
+    <Content Include="fonts\glyphicons-211-left-arrow.png" />
+    <Content Include="fonts\glyphicons-212-right-arrow.png" />
+    <Content Include="fonts\glyphicons-213-down-arrow.png" />
+    <Content Include="fonts\glyphicons-214-up-arrow.png" />
+    <Content Include="fonts\glyphicons-215-resize-small.png" />
+    <Content Include="fonts\glyphicons-216-resize-full.png" />
+    <Content Include="fonts\glyphicons-217-circle-arrow-left.png" />
+    <Content Include="fonts\glyphicons-218-circle-arrow-right.png" />
+    <Content Include="fonts\glyphicons-219-circle-arrow-top.png" />
+    <Content Include="fonts\glyphicons-22-snowflake.png" />
+    <Content Include="fonts\glyphicons-220-circle-arrow-down.png" />
+    <Content Include="fonts\glyphicons-221-play-button.png" />
+    <Content Include="fonts\glyphicons-222-unshare.png" />
+    <Content Include="fonts\glyphicons-223-share.png" />
+    <Content Include="fonts\glyphicons-224-chevron-right.png" />
+    <Content Include="fonts\glyphicons-225-chevron-left.png" />
+    <Content Include="fonts\glyphicons-226-bluetooth.png" />
+    <Content Include="fonts\glyphicons-227-euro.png" />
+    <Content Include="fonts\glyphicons-228-usd.png" />
+    <Content Include="fonts\glyphicons-229-gbp.png" />
+    <Content Include="fonts\glyphicons-23-fire.png" />
+    <Content Include="fonts\glyphicons-230-retweet-2.png" />
+    <Content Include="fonts\glyphicons-231-moon.png" />
+    <Content Include="fonts\glyphicons-232-sun.png" />
+    <Content Include="fonts\glyphicons-233-cloud.png" />
+    <Content Include="fonts\glyphicons-234-direction.png" />
+    <Content Include="fonts\glyphicons-235-brush.png" />
+    <Content Include="fonts\glyphicons-236-pen.png" />
+    <Content Include="fonts\glyphicons-237-zoom-in.png" />
+    <Content Include="fonts\glyphicons-238-zoom-out.png" />
+    <Content Include="fonts\glyphicons-239-pin.png" />
+    <Content Include="fonts\glyphicons-24-magnet.png" />
+    <Content Include="fonts\glyphicons-240-albums.png" />
+    <Content Include="fonts\glyphicons-241-rotation-lock.png" />
+    <Content Include="fonts\glyphicons-242-flash.png" />
+    <Content Include="fonts\glyphicons-243-google-maps.png" />
+    <Content Include="fonts\glyphicons-244-anchor.png" />
+    <Content Include="fonts\glyphicons-245-conversation.png" />
+    <Content Include="fonts\glyphicons-246-chat.png" />
+    <Content Include="fonts\glyphicons-247-male.png" />
+    <Content Include="fonts\glyphicons-248-female.png" />
+    <Content Include="fonts\glyphicons-249-asterisk.png" />
+    <Content Include="fonts\glyphicons-25-parents.png" />
+    <Content Include="fonts\glyphicons-250-divide.png" />
+    <Content Include="fonts\glyphicons-251-snorkel-diving.png" />
+    <Content Include="fonts\glyphicons-252-scuba-diving.png" />
+    <Content Include="fonts\glyphicons-253-oxygen-bottle.png" />
+    <Content Include="fonts\glyphicons-254-fins.png" />
+    <Content Include="fonts\glyphicons-255-fishes.png" />
+    <Content Include="fonts\glyphicons-256-boat.png" />
+    <Content Include="fonts\glyphicons-257-delete.png" />
+    <Content Include="fonts\glyphicons-258-sheriffs-star.png" />
+    <Content Include="fonts\glyphicons-259-qrcode.png" />
+    <Content Include="fonts\glyphicons-26-binoculars.png" />
+    <Content Include="fonts\glyphicons-260-barcode.png" />
+    <Content Include="fonts\glyphicons-261-pool.png" />
+    <Content Include="fonts\glyphicons-262-buoy.png" />
+    <Content Include="fonts\glyphicons-263-spade.png" />
+    <Content Include="fonts\glyphicons-264-bank.png" />
+    <Content Include="fonts\glyphicons-265-vcard.png" />
+    <Content Include="fonts\glyphicons-266-electrical-plug.png" />
+    <Content Include="fonts\glyphicons-267-flag.png" />
+    <Content Include="fonts\glyphicons-268-credit-card.png" />
+    <Content Include="fonts\glyphicons-269-keyboard-wireless.png" />
+    <Content Include="fonts\glyphicons-27-road.png" />
+    <Content Include="fonts\glyphicons-270-keyboard-wired.png" />
+    <Content Include="fonts\glyphicons-271-shield.png" />
+    <Content Include="fonts\glyphicons-272-ring.png" />
+    <Content Include="fonts\glyphicons-273-cake.png" />
+    <Content Include="fonts\glyphicons-274-drink.png" />
+    <Content Include="fonts\glyphicons-275-beer.png" />
+    <Content Include="fonts\glyphicons-276-fast-food.png" />
+    <Content Include="fonts\glyphicons-277-cutlery.png" />
+    <Content Include="fonts\glyphicons-278-pizza.png" />
+    <Content Include="fonts\glyphicons-279-birthday-cake.png" />
+    <Content Include="fonts\glyphicons-28-search.png" />
+    <Content Include="fonts\glyphicons-280-tablet.png" />
+    <Content Include="fonts\glyphicons-281-settings.png" />
+    <Content Include="fonts\glyphicons-282-bullets.png" />
+    <Content Include="fonts\glyphicons-283-cardio.png" />
+    <Content Include="fonts\glyphicons-284-t-shirt.png" />
+    <Content Include="fonts\glyphicons-285-pants.png" />
+    <Content Include="fonts\glyphicons-286-sweater.png" />
+    <Content Include="fonts\glyphicons-287-fabric.png" />
+    <Content Include="fonts\glyphicons-288-leather.png" />
+    <Content Include="fonts\glyphicons-289-scissors.png" />
+    <Content Include="fonts\glyphicons-29-cars.png" />
+    <Content Include="fonts\glyphicons-290-bomb.png" />
+    <Content Include="fonts\glyphicons-291-skull.png" />
+    <Content Include="fonts\glyphicons-292-celebration.png" />
+    <Content Include="fonts\glyphicons-293-tea-kettle.png" />
+    <Content Include="fonts\glyphicons-294-french-press.png" />
+    <Content Include="fonts\glyphicons-295-coffee-cup.png" />
+    <Content Include="fonts\glyphicons-296-pot.png" />
+    <Content Include="fonts\glyphicons-297-grater.png" />
+    <Content Include="fonts\glyphicons-298-kettle.png" />
+    <Content Include="fonts\glyphicons-299-hospital.png" />
+    <Content Include="fonts\glyphicons-3-dog.png" />
+    <Content Include="fonts\glyphicons-30-notes-2.png" />
+    <Content Include="fonts\glyphicons-300-hospital-h.png" />
+    <Content Include="fonts\glyphicons-301-microphone.png" />
+    <Content Include="fonts\glyphicons-302-webcam.png" />
+    <Content Include="fonts\glyphicons-303-temple-christianity-church.png" />
+    <Content Include="fonts\glyphicons-304-temple-islam.png" />
+    <Content Include="fonts\glyphicons-305-temple-hindu.png" />
+    <Content Include="fonts\glyphicons-306-temple-buddhist.png" />
+    <Content Include="fonts\glyphicons-307-bicycle.png" />
+    <Content Include="fonts\glyphicons-308-life-preserver.png" />
+    <Content Include="fonts\glyphicons-309-share-alt.png" />
+    <Content Include="fonts\glyphicons-31-pencil.png" />
+    <Content Include="fonts\glyphicons-310-comments.png" />
+    <Content Include="fonts\glyphicons-311-flower.png" />
+    <Content Include="fonts\glyphicons-312-baseball.png" />
+    <Content Include="fonts\glyphicons-313-rugby.png" />
+    <Content Include="fonts\glyphicons-314-ax.png" />
+    <Content Include="fonts\glyphicons-315-table-tennis.png" />
+    <Content Include="fonts\glyphicons-316-bowling.png" />
+    <Content Include="fonts\glyphicons-317-tree-conifer.png" />
+    <Content Include="fonts\glyphicons-318-tree-deciduous.png" />
+    <Content Include="fonts\glyphicons-319-more-items.png" />
+    <Content Include="fonts\glyphicons-32-bus.png" />
+    <Content Include="fonts\glyphicons-320-sort.png" />
+    <Content Include="fonts\glyphicons-321-filter.png" />
+    <Content Include="fonts\glyphicons-322-gamepad.png" />
+    <Content Include="fonts\glyphicons-323-playing-dices.png" />
+    <Content Include="fonts\glyphicons-324-calculator.png" />
+    <Content Include="fonts\glyphicons-325-tie.png" />
+    <Content Include="fonts\glyphicons-326-wallet.png" />
+    <Content Include="fonts\glyphicons-327-piano.png" />
+    <Content Include="fonts\glyphicons-328-sampler.png" />
+    <Content Include="fonts\glyphicons-329-podium.png" />
+    <Content Include="fonts\glyphicons-33-wifi-alt.png" />
+    <Content Include="fonts\glyphicons-330-soccer-ball.png" />
+    <Content Include="fonts\glyphicons-331-blog.png" />
+    <Content Include="fonts\glyphicons-332-dashboard.png" />
+    <Content Include="fonts\glyphicons-333-certificate.png" />
+    <Content Include="fonts\glyphicons-334-bell.png" />
+    <Content Include="fonts\glyphicons-335-candle.png" />
+    <Content Include="fonts\glyphicons-336-pushpin.png" />
+    <Content Include="fonts\glyphicons-337-iphone-shake.png" />
+    <Content Include="fonts\glyphicons-338-pin-flag.png" />
+    <Content Include="fonts\glyphicons-339-turtle.png" />
+    <Content Include="fonts\glyphicons-34-luggage.png" />
+    <Content Include="fonts\glyphicons-340-rabbit.png" />
+    <Content Include="fonts\glyphicons-341-globe.png" />
+    <Content Include="fonts\glyphicons-342-briefcase.png" />
+    <Content Include="fonts\glyphicons-343-hdd.png" />
+    <Content Include="fonts\glyphicons-344-thumbs-up.png" />
+    <Content Include="fonts\glyphicons-345-thumbs-down.png" />
+    <Content Include="fonts\glyphicons-346-hand-right.png" />
+    <Content Include="fonts\glyphicons-347-hand-left.png" />
+    <Content Include="fonts\glyphicons-348-hand-up.png" />
+    <Content Include="fonts\glyphicons-349-hand-down.png" />
+    <Content Include="fonts\glyphicons-35-old-man.png" />
+    <Content Include="fonts\glyphicons-350-fullscreen.png" />
+    <Content Include="fonts\glyphicons-351-shopping-bag.png" />
+    <Content Include="fonts\glyphicons-352-book-open.png" />
+    <Content Include="fonts\glyphicons-353-nameplate.png" />
+    <Content Include="fonts\glyphicons-354-nameplate-alt.png" />
+    <Content Include="fonts\glyphicons-355-vases.png" />
+    <Content Include="fonts\glyphicons-356-bullhorn.png" />
+    <Content Include="fonts\glyphicons-357-dumbbell.png" />
+    <Content Include="fonts\glyphicons-358-suitcase.png" />
+    <Content Include="fonts\glyphicons-359-file-import.png" />
+    <Content Include="fonts\glyphicons-36-woman.png" />
+    <Content Include="fonts\glyphicons-360-file-export.png" />
+    <Content Include="fonts\glyphicons-361-bug.png" />
+    <Content Include="fonts\glyphicons-362-crown.png" />
+    <Content Include="fonts\glyphicons-363-smoking.png" />
+    <Content Include="fonts\glyphicons-364-cloud-download.png" />
+    <Content Include="fonts\glyphicons-365-cloud-upload.png" />
+    <Content Include="fonts\glyphicons-366-restart.png" />
+    <Content Include="fonts\glyphicons-367-security-camera.png" />
+    <Content Include="fonts\glyphicons-368-expand.png" />
+    <Content Include="fonts\glyphicons-369-collapse.png" />
+    <Content Include="fonts\glyphicons-37-file.png" />
+    <Content Include="fonts\glyphicons-370-collapse-top.png" />
+    <Content Include="fonts\glyphicons-371-globe-af.png" />
+    <Content Include="fonts\glyphicons-372-global.png" />
+    <Content Include="fonts\glyphicons-373-spray.png" />
+    <Content Include="fonts\glyphicons-374-nails.png" />
+    <Content Include="fonts\glyphicons-375-claw-hammer.png" />
+    <Content Include="fonts\glyphicons-376-classic-hammer.png" />
+    <Content Include="fonts\glyphicons-377-hand-saw.png" />
+    <Content Include="fonts\glyphicons-378-riflescope.png" />
+    <Content Include="fonts\glyphicons-379-electrical-socket-eu.png" />
+    <Content Include="fonts\glyphicons-38-coins.png" />
+    <Content Include="fonts\glyphicons-380-electrical-socket-us.png" />
+    <Content Include="fonts\glyphicons-381-message-forward.png" />
+    <Content Include="fonts\glyphicons-382-coat-hanger.png" />
+    <Content Include="fonts\glyphicons-383-dress.png" />
+    <Content Include="fonts\glyphicons-384-bathrobe.png" />
+    <Content Include="fonts\glyphicons-385-shirt.png" />
+    <Content Include="fonts\glyphicons-386-underwear.png" />
+    <Content Include="fonts\glyphicons-387-log-in.png" />
+    <Content Include="fonts\glyphicons-388-log-out.png" />
+    <Content Include="fonts\glyphicons-389-exit.png" />
+    <Content Include="fonts\glyphicons-39-airplane.png" />
+    <Content Include="fonts\glyphicons-390-new-window-alt.png" />
+    <Content Include="fonts\glyphicons-391-video-sd.png" />
+    <Content Include="fonts\glyphicons-392-video-hd.png" />
+    <Content Include="fonts\glyphicons-393-subtitles.png" />
+    <Content Include="fonts\glyphicons-394-sound-stereo.png" />
+    <Content Include="fonts\glyphicons-395-sound-dolby.png" />
+    <Content Include="fonts\glyphicons-396-sound-5-1.png" />
+    <Content Include="fonts\glyphicons-397-sound-6-1.png" />
+    <Content Include="fonts\glyphicons-398-sound-7-1.png" />
+    <Content Include="fonts\glyphicons-399-copyright-mark.png" />
+    <Content Include="fonts\glyphicons-4-user.png" />
+    <Content Include="fonts\glyphicons-40-notes.png" />
+    <Content Include="fonts\glyphicons-400-registration-mark.png" />
+    <Content Include="fonts\glyphicons-401-radar.png" />
+    <Content Include="fonts\glyphicons-402-skateboard.png" />
+    <Content Include="fonts\glyphicons-403-golf-course.png" />
+    <Content Include="fonts\glyphicons-404-sorting.png" />
+    <Content Include="fonts\glyphicons-405-sort-by-alphabet.png" />
+    <Content Include="fonts\glyphicons-406-sort-by-alphabet-alt.png" />
+    <Content Include="fonts\glyphicons-407-sort-by-order.png" />
+    <Content Include="fonts\glyphicons-408-sort-by-order-alt.png" />
+    <Content Include="fonts\glyphicons-409-sort-by-attributes.png" />
+    <Content Include="fonts\glyphicons-41-stats.png" />
+    <Content Include="fonts\glyphicons-410-sort-by-attributes-alt.png" />
+    <Content Include="fonts\glyphicons-411-compressed.png" />
+    <Content Include="fonts\glyphicons-412-package.png" />
+    <Content Include="fonts\glyphicons-413-cloud-plus.png" />
+    <Content Include="fonts\glyphicons-414-cloud-minus.png" />
+    <Content Include="fonts\glyphicons-415-disk-save.png" />
+    <Content Include="fonts\glyphicons-416-disk-open.png" />
+    <Content Include="fonts\glyphicons-417-disk-saved.png" />
+    <Content Include="fonts\glyphicons-418-disk-remove.png" />
+    <Content Include="fonts\glyphicons-419-disk-import.png" />
+    <Content Include="fonts\glyphicons-42-charts.png" />
+    <Content Include="fonts\glyphicons-420-disk-export.png" />
+    <Content Include="fonts\glyphicons-421-tower.png" />
+    <Content Include="fonts\glyphicons-422-send.png" />
+    <Content Include="fonts\glyphicons-423-git-branch.png" />
+    <Content Include="fonts\glyphicons-424-git-create.png" />
+    <Content Include="fonts\glyphicons-425-git-private.png" />
+    <Content Include="fonts\glyphicons-426-git-delete.png" />
+    <Content Include="fonts\glyphicons-427-git-merge.png" />
+    <Content Include="fonts\glyphicons-428-git-pull-request.png" />
+    <Content Include="fonts\glyphicons-429-git-compare.png" />
+    <Content Include="fonts\glyphicons-43-pie-chart.png" />
+    <Content Include="fonts\glyphicons-430-git-commit.png" />
+    <Content Include="fonts\glyphicons-431-construction-cone.png" />
+    <Content Include="fonts\glyphicons-432-shoe-steps.png" />
+    <Content Include="fonts\glyphicons-433-plus.png" />
+    <Content Include="fonts\glyphicons-434-minus.png" />
+    <Content Include="fonts\glyphicons-435-redo.png" />
+    <Content Include="fonts\glyphicons-436-undo.png" />
+    <Content Include="fonts\glyphicons-437-golf.png" />
+    <Content Include="fonts\glyphicons-438-hockey.png" />
+    <Content Include="fonts\glyphicons-439-pipe.png" />
+    <Content Include="fonts\glyphicons-44-group.png" />
+    <Content Include="fonts\glyphicons-440-wrench.png" />
+    <Content Include="fonts\glyphicons-441-folder-closed.png" />
+    <Content Include="fonts\glyphicons-442-phone-alt.png" />
+    <Content Include="fonts\glyphicons-443-earphone.png" />
+    <Content Include="fonts\glyphicons-444-floppy-disk.png" />
+    <Content Include="fonts\glyphicons-445-floppy-saved.png" />
+    <Content Include="fonts\glyphicons-446-floppy-remove.png" />
+    <Content Include="fonts\glyphicons-447-floppy-save.png" />
+    <Content Include="fonts\glyphicons-448-floppy-open.png" />
+    <Content Include="fonts\glyphicons-449-translate.png" />
+    <Content Include="fonts\glyphicons-45-keys.png" />
+    <Content Include="fonts\glyphicons-450-fax.png" />
+    <Content Include="fonts\glyphicons-451-factory.png" />
+    <Content Include="fonts\glyphicons-452-shop-window.png" />
+    <Content Include="fonts\glyphicons-453-shop.png" />
+    <Content Include="fonts\glyphicons-454-kiosk.png" />
+    <Content Include="fonts\glyphicons-455-kiosk-wheels.png" />
+    <Content Include="fonts\glyphicons-456-kiosk-light.png" />
+    <Content Include="fonts\glyphicons-457-kiosk-food.png" />
+    <Content Include="fonts\glyphicons-458-transfer.png" />
+    <Content Include="fonts\glyphicons-459-money.png" />
+    <Content Include="fonts\glyphicons-46-calendar.png" />
+    <Content Include="fonts\glyphicons-460-header.png" />
+    <Content Include="fonts\glyphicons-461-blacksmith.png" />
+    <Content Include="fonts\glyphicons-462-saw-blade.png" />
+    <Content Include="fonts\glyphicons-463-basketball.png" />
+    <Content Include="fonts\glyphicons-464-server.png" />
+    <Content Include="fonts\glyphicons-465-server-plus.png" />
+    <Content Include="fonts\glyphicons-466-server-minus.png" />
+    <Content Include="fonts\glyphicons-467-server-ban.png" />
+    <Content Include="fonts\glyphicons-468-server-flag.png" />
+    <Content Include="fonts\glyphicons-469-server-lock.png" />
+    <Content Include="fonts\glyphicons-47-router.png" />
+    <Content Include="fonts\glyphicons-470-server-new.png" />
+    <Content Include="fonts\glyphicons-471-elec-station.png" />
+    <Content Include="fonts\glyphicons-472-gas-station.png" />
+    <Content Include="fonts\glyphicons-473-target.png" />
+    <Content Include="fonts\glyphicons-474-bed-alt.png" />
+    <Content Include="fonts\glyphicons-475-mosquito-net.png" />
+    <Content Include="fonts\glyphicons-476-dining-set.png" />
+    <Content Include="fonts\glyphicons-477-plate-of-food.png" />
+    <Content Include="fonts\glyphicons-478-hygiene-kit.png" />
+    <Content Include="fonts\glyphicons-479-blackboard.png" />
+    <Content Include="fonts\glyphicons-48-camera-small.png" />
+    <Content Include="fonts\glyphicons-480-marriage.png" />
+    <Content Include="fonts\glyphicons-481-bucket.png" />
+    <Content Include="fonts\glyphicons-482-none-color-swatch.png" />
+    <Content Include="fonts\glyphicons-483-bring-forward.png" />
+    <Content Include="fonts\glyphicons-484-bring-to-front.png" />
+    <Content Include="fonts\glyphicons-485-send-backward.png" />
+    <Content Include="fonts\glyphicons-486-send-to-back.png" />
+    <Content Include="fonts\glyphicons-487-fit-frame-to-image.png" />
+    <Content Include="fonts\glyphicons-488-fit-image-to-frame.png" />
+    <Content Include="fonts\glyphicons-489-multiple-displays.png" />
+    <Content Include="fonts\glyphicons-49-star-empty.png" />
+    <Content Include="fonts\glyphicons-490-handshake.png" />
+    <Content Include="fonts\glyphicons-491-child.png" />
+    <Content Include="fonts\glyphicons-492-baby-formula.png" />
+    <Content Include="fonts\glyphicons-493-medicine.png" />
+    <Content Include="fonts\glyphicons-494-atv-vehicle.png" />
+    <Content Include="fonts\glyphicons-495-motorcycle.png" />
+    <Content Include="fonts\glyphicons-496-bed.png" />
+    <Content Include="fonts\glyphicons-497-tent.png" />
+    <Content Include="fonts\glyphicons-498-glasses.png" />
+    <Content Include="fonts\glyphicons-499-sunglasses.png" />
+    <Content Include="fonts\glyphicons-5-girl.png" />
+    <Content Include="fonts\glyphicons-50-star.png" />
+    <Content Include="fonts\glyphicons-500-family.png" />
+    <Content Include="fonts\glyphicons-501-education.png" />
+    <Content Include="fonts\glyphicons-502-shoes.png" />
+    <Content Include="fonts\glyphicons-503-map.png" />
+    <Content Include="fonts\glyphicons-504-cd.png" />
+    <Content Include="fonts\glyphicons-505-alert.png" />
+    <Content Include="fonts\glyphicons-506-piggy-bank.png" />
+    <Content Include="fonts\glyphicons-507-star-half.png" />
+    <Content Include="fonts\glyphicons-508-cluster.png" />
+    <Content Include="fonts\glyphicons-509-flowchart.png" />
+    <Content Include="fonts\glyphicons-51-link.png" />
+    <Content Include="fonts\glyphicons-510-commodities.png" />
+    <Content Include="fonts\glyphicons-511-duplicate.png" />
+    <Content Include="fonts\glyphicons-512-copy.png" />
+    <Content Include="fonts\glyphicons-513-paste.png" />
+    <Content Include="fonts\glyphicons-514-bath-bathtub.png" />
+    <Content Include="fonts\glyphicons-515-bath-shower.png" />
+    <Content Include="fonts\glyphicons-516-shower.png" />
+    <Content Include="fonts\glyphicons-517-menu-hamburger.png" />
+    <Content Include="fonts\glyphicons-518-option-vertical.png" />
+    <Content Include="fonts\glyphicons-519-option-horizontal.png" />
+    <Content Include="fonts\glyphicons-52-eye-open.png" />
+    <Content Include="fonts\glyphicons-520-currency-conversion.png" />
+    <Content Include="fonts\glyphicons-521-user-ban.png" />
+    <Content Include="fonts\glyphicons-522-user-lock.png" />
+    <Content Include="fonts\glyphicons-523-user-flag.png" />
+    <Content Include="fonts\glyphicons-524-user-asterisk.png" />
+    <Content Include="fonts\glyphicons-525-user-alert.png" />
+    <Content Include="fonts\glyphicons-526-user-key.png" />
+    <Content Include="fonts\glyphicons-527-user-conversation.png" />
+    <Content Include="fonts\glyphicons-528-database.png" />
+    <Content Include="fonts\glyphicons-529-database-search.png" />
+    <Content Include="fonts\glyphicons-53-eye-close.png" />
+    <Content Include="fonts\glyphicons-530-list-alt.png" />
+    <Content Include="fonts\glyphicons-531-hazard-sign.png" />
+    <Content Include="fonts\glyphicons-532-hazard.png" />
+    <Content Include="fonts\glyphicons-533-stop-sign.png" />
+    <Content Include="fonts\glyphicons-534-lab.png" />
+    <Content Include="fonts\glyphicons-535-lab-alt.png" />
+    <Content Include="fonts\glyphicons-536-ice-cream.png" />
+    <Content Include="fonts\glyphicons-537-ice-lolly.png" />
+    <Content Include="fonts\glyphicons-538-ice-lolly-tasted.png" />
+    <Content Include="fonts\glyphicons-539-invoice.png" />
+    <Content Include="fonts\glyphicons-54-alarm.png" />
+    <Content Include="fonts\glyphicons-540-cart-tick.png" />
+    <Content Include="fonts\glyphicons-541-hourglass.png" />
+    <Content Include="fonts\glyphicons-542-cat.png" />
+    <Content Include="fonts\glyphicons-543-lamp.png" />
+    <Content Include="fonts\glyphicons-544-scale-classic.png" />
+    <Content Include="fonts\glyphicons-545-eye-plus.png" />
+    <Content Include="fonts\glyphicons-546-eye-minus.png" />
+    <Content Include="fonts\glyphicons-547-quote.png" />
+    <Content Include="fonts\glyphicons-548-bitcoin.png" />
+    <Content Include="fonts\glyphicons-549-yen.png" />
+    <Content Include="fonts\glyphicons-55-clock.png" />
+    <Content Include="fonts\glyphicons-550-ruble.png" />
+    <Content Include="fonts\glyphicons-551-erase.png" />
+    <Content Include="fonts\glyphicons-552-podcast.png" />
+    <Content Include="fonts\glyphicons-553-firework.png" />
+    <Content Include="fonts\glyphicons-554-scale.png" />
+    <Content Include="fonts\glyphicons-555-king.png" />
+    <Content Include="fonts\glyphicons-556-queen.png" />
+    <Content Include="fonts\glyphicons-557-pawn.png" />
+    <Content Include="fonts\glyphicons-558-bishop.png" />
+    <Content Include="fonts\glyphicons-559-knight.png" />
+    <Content Include="fonts\glyphicons-56-stopwatch.png" />
+    <Content Include="fonts\glyphicons-560-mic-mute.png" />
+    <Content Include="fonts\glyphicons-561-voicemail.png" />
+    <Content Include="fonts\glyphicons-562-paragraph.png" />
+    <Content Include="fonts\glyphicons-563-person-walking.png" />
+    <Content Include="fonts\glyphicons-564-person-wheelchair.png" />
+    <Content Include="fonts\glyphicons-565-underground.png" />
+    <Content Include="fonts\glyphicons-566-car-hov.png" />
+    <Content Include="fonts\glyphicons-567-car-rental.png" />
+    <Content Include="fonts\glyphicons-568-transport.png" />
+    <Content Include="fonts\glyphicons-569-taxi.png" />
+    <Content Include="fonts\glyphicons-57-projector.png" />
+    <Content Include="fonts\glyphicons-570-ice-cream-no.png" />
+    <Content Include="fonts\glyphicons-571-uk-rat-u.png" />
+    <Content Include="fonts\glyphicons-572-uk-rat-pg.png" />
+    <Content Include="fonts\glyphicons-573-uk-rat-12a.png" />
+    <Content Include="fonts\glyphicons-574-uk-rat-12.png" />
+    <Content Include="fonts\glyphicons-575-uk-rat-15.png" />
+    <Content Include="fonts\glyphicons-576-uk-rat-18.png" />
+    <Content Include="fonts\glyphicons-577-uk-rat-r18.png" />
+    <Content Include="fonts\glyphicons-578-tv.png" />
+    <Content Include="fonts\glyphicons-579-sms.png" />
+    <Content Include="fonts\glyphicons-58-history.png" />
+    <Content Include="fonts\glyphicons-580-mms.png" />
+    <Content Include="fonts\glyphicons-581-us-rat-g.png" />
+    <Content Include="fonts\glyphicons-582-us-rat-pg.png" />
+    <Content Include="fonts\glyphicons-583-us-rat-pg-13.png" />
+    <Content Include="fonts\glyphicons-584-us-rat-restricted.png" />
+    <Content Include="fonts\glyphicons-585-us-rat-no-one-17.png" />
+    <Content Include="fonts\glyphicons-586-equalizer.png" />
+    <Content Include="fonts\glyphicons-587-speakers.png" />
+    <Content Include="fonts\glyphicons-588-remote-control.png" />
+    <Content Include="fonts\glyphicons-589-remote-control-tv.png" />
+    <Content Include="fonts\glyphicons-59-truck.png" />
+    <Content Include="fonts\glyphicons-590-shredder.png" />
+    <Content Include="fonts\glyphicons-591-folder-heart.png" />
+    <Content Include="fonts\glyphicons-592-person-running.png" />
+    <Content Include="fonts\glyphicons-593-person.png" />
+    <Content Include="fonts\glyphicons-594-voice.png" />
+    <Content Include="fonts\glyphicons-595-stethoscope.png" />
+    <Content Include="fonts\glyphicons-596-hotspot.png" />
+    <Content Include="fonts\glyphicons-597-activity.png" />
+    <Content Include="fonts\glyphicons-598-watch.png" />
+    <Content Include="fonts\glyphicons-599-scissors-alt.png" />
+    <Content Include="fonts\glyphicons-6-car.png" />
+    <Content Include="fonts\glyphicons-60-cargo.png" />
+    <Content Include="fonts\glyphicons-600-car-wheel.png" />
+    <Content Include="fonts\glyphicons-601-chevron-up.png" />
+    <Content Include="fonts\glyphicons-602-chevron-down.png" />
+    <Content Include="fonts\glyphicons-603-superscript.png" />
+    <Content Include="fonts\glyphicons-604-subscript.png" />
+    <Content Include="fonts\glyphicons-605-text-size.png" />
+    <Content Include="fonts\glyphicons-606-text-color.png" />
+    <Content Include="fonts\glyphicons-607-text-background.png" />
+    <Content Include="fonts\glyphicons-608-modal-window.png" />
+    <Content Include="fonts\glyphicons-609-newspaper.png" />
+    <Content Include="fonts\glyphicons-61-compass.png" />
+    <Content Include="fonts\glyphicons-610-tractor.png" />
+    <Content Include="fonts\glyphicons-62-keynote.png" />
+    <Content Include="fonts\glyphicons-63-paperclip.png" />
+    <Content Include="fonts\glyphicons-64-power.png" />
+    <Content Include="fonts\glyphicons-65-lightbulb.png" />
+    <Content Include="fonts\glyphicons-66-tag.png" />
+    <Content Include="fonts\glyphicons-67-tags.png" />
+    <Content Include="fonts\glyphicons-68-cleaning.png" />
+    <Content Include="fonts\glyphicons-69-ruler.png" />
+    <Content Include="fonts\glyphicons-7-user-add.png" />
+    <Content Include="fonts\glyphicons-70-gift.png" />
+    <Content Include="fonts\glyphicons-71-umbrella.png" />
+    <Content Include="fonts\glyphicons-72-book.png" />
+    <Content Include="fonts\glyphicons-73-bookmark.png" />
+    <Content Include="fonts\glyphicons-74-wifi.png" />
+    <Content Include="fonts\glyphicons-75-cup.png" />
+    <Content Include="fonts\glyphicons-76-stroller.png" />
+    <Content Include="fonts\glyphicons-77-headphones.png" />
+    <Content Include="fonts\glyphicons-78-headset.png" />
+    <Content Include="fonts\glyphicons-79-warning-sign.png" />
+    <Content Include="fonts\glyphicons-8-user-remove.png" />
+    <Content Include="fonts\glyphicons-80-signal.png" />
+    <Content Include="fonts\glyphicons-81-retweet.png" />
+    <Content Include="fonts\glyphicons-82-refresh.png" />
+    <Content Include="fonts\glyphicons-83-roundabout.png" />
+    <Content Include="fonts\glyphicons-84-random.png" />
+    <Content Include="fonts\glyphicons-85-heat.png" />
+    <Content Include="fonts\glyphicons-86-repeat.png" />
+    <Content Include="fonts\glyphicons-87-display.png" />
+    <Content Include="fonts\glyphicons-88-log-book.png" />
+    <Content Include="fonts\glyphicons-89-address-book.png" />
+    <Content Include="fonts\glyphicons-9-film.png" />
+    <Content Include="fonts\glyphicons-90-building.png" />
+    <Content Include="fonts\glyphicons-91-eyedropper.png" />
+    <Content Include="fonts\glyphicons-92-adjust.png" />
+    <Content Include="fonts\glyphicons-93-tint.png" />
+    <Content Include="fonts\glyphicons-94-crop.png" />
+    <Content Include="fonts\glyphicons-95-vector-path-square.png" />
+    <Content Include="fonts\glyphicons-96-vector-path-circle.png" />
+    <Content Include="fonts\glyphicons-97-vector-path-polygon.png" />
+    <Content Include="fonts\glyphicons-98-vector-path-line.png" />
+    <Content Include="fonts\glyphicons-99-vector-path-curve.png" />
+    <Content Include="Images\accept.png" />
+    <Content Include="Images\Approve.png" />
+    <Content Include="Images\approve1.png" />
+    <Content Include="Images\Approved.png" />
+    <Content Include="Images\avaialbe-events.png" />
+    <Content Include="Images\back_disabled.png" />
+    <Content Include="Images\back_enabled.png" />
+    <Content Include="Images\back_enabled_hover.png" />
+    <Content Include="Images\Banner1.png" />
+    <Content Include="Images\Banner2.png" />
+    <Content Include="Images\bg_grayheader.png" />
+    <Content Include="Images\bg_header.png" />
+    <Content Include="Images\Bill-Header.png" />
+    <Content Include="Images\bill.png" />
+    <Content Include="Images\Binary-Code-128.png" />
+    <Content Include="Images\calender.png" />
+    <Content Include="Images\Close-icon.png" />
+    <Content Include="Images\close_icon.png" />
+    <Content Include="Images\close_icon_2.png" />
+    <Content Include="Images\close_newIco.png" />
+    <Content Include="Images\events.png" />
+    <Content Include="Images\feedback.png" />
+    <Content Include="Images\Footer Image.png" />
+    <Content Include="Images\forward_disabled.png" />
+    <Content Include="Images\forward_enabled.png" />
+    <Content Include="Images\forward_enabled_hover.png" />
+    <Content Include="Images\hecBanner.jpg" />
+    <Content Include="Images\iCal.png" />
+    <Content Include="Images\icon-search.png" />
+    <Content Include="Images\icon_add.png" />
+    <Content Include="Images\icon_addnew.png" />
+    <Content Include="Images\icon_delete.png" />
+    <Content Include="Images\icon_edit.png" />
+    <Content Include="Images\icon_logout.png" />
+    <Content Include="Images\icon_user.png" />
+    <Content Include="Images\loader1.gif" />
+    <Content Include="Images\loader2.gif" />
+    <Content Include="Images\loader3.gif" />
+    <Content Include="Images\loader4.gif" />
+    <Content Include="Images\loader5.gif" />
+    <Content Include="Images\loader6.gif" />
+    <Content Include="Images\LoginPage.png" />
+    <Content Include="Images\logo-header.png" />
+    <Content Include="Images\logo_header.png" />
+    <Content Include="Images\manage-users.png" />
+    <Content Include="Images\myevents.png" />
+    <Content Include="Images\New-Pending.png" />
+    <Content Include="Images\NoRecurrence.png" />
+    <Content Include="Images\Pending.png" />
+    <Content Include="Images\pending1.png" />
+    <Content Include="Images\Recur.png" />
+    <Content Include="Images\Recurrence.png" />
+    <Content Include="Images\reject.png" />
+    <Content Include="Images\reject1.png" />
+    <Content Include="Images\Rejected.png" />
+    <Content Include="Images\reports.png" />
+    <Content Include="Images\role-request.png" />
+    <Content Include="Images\rooms.png" />
+    <Content Include="Images\SchEvent.png" />
+    <Content Include="Images\send-email.png" />
+    <Content Include="Images\Share.png" />
+    <Content Include="Images\sites.png" />
+    <Content Include="Images\sort_asc.png" />
+    <Content Include="Images\sort_asc_disabled.png" />
+    <Content Include="Images\sort_both.png" />
+    <Content Include="Images\sort_desc.png" />
+    <Content Include="Images\sort_desc_disabled.png" />
+    <Content Include="Images\university.png" />
+    <Content Include="Images\wait.gif" />
+    <Content Include="OrganizationType\Elements.xml" />
+    <Content Include="OrganizationType\OrganizationTypeInstance\Elements.xml" />
+    <Content Include="OrganizationType\Schema.xml" />
+    <Content Include="Pages\HomePage.aspx" />
+    <Content Include="Pages\Page1.aspx" />
+    <Content Include="RoomFacilities\Elements.xml" />
+    <Content Include="RoomFacilities\RoomFacilitiesInstance\Elements.xml" />
+    <Content Include="RoomFacilities\Schema.xml" />
+    <Content Include="ScheduledEvents\Elements.xml" />
+    <Content Include="ScheduledEvents\ScheduledEventsInstance\Elements.xml" />
+    <Content Include="ScheduledEvents\Schema.xml" />
+    <Content Include="Scripts\bootstrap-multiEmail.js" />
+    <Content Include="Scripts\bootstrap-tagsinput.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\dt1.4\jquery.dataTables.js" />
+    <Content Include="Scripts\dt1.4\jquery.dataTables.min.js" />
+    <Content Include="Scripts\jNotify.jquery.js" />
+    <Content Include="Scripts\jNotify.jquery.min.js" />
+    <Content Include="Scripts\jquery.dataTables.input.js" />
+    <Content Include="Scripts\jquery.dataTables.min.js" />
+    <Content Include="Scripts\jquery.dialogOptions.js" />
+    <Content Include="Scripts\js\jchartfx.advanced.js" />
+    <Content Include="Scripts\js\jchartfx.animation.js" />
+    <Content Include="Scripts\js\jchartfx.annotation.js" />
+    <Content Include="Scripts\js\jchartfx.bullet.js" />
+    <Content Include="Scripts\js\jchartfx.coreBasic.js" />
+    <Content Include="Scripts\js\jchartfx.coreVector.js" />
+    <Content Include="Scripts\js\jchartfx.coreVector3d.js" />
+    <Content Include="Scripts\js\jchartfx.data.js" />
+    <Content Include="Scripts\js\jchartfx.density.js" />
+    <Content Include="Scripts\js\jchartfx.equalizer.js" />
+    <Content Include="Scripts\js\jchartfx.funnel.js" />
+    <Content Include="Scripts\js\jchartfx.gauge.js" />
+    <Content Include="Scripts\js\jchartfx.handdrawn.js" />
+    <Content Include="Scripts\js\jchartfx.heatmap.js" />
+    <Content Include="Scripts\js\jchartfx.highlow.js" />
+    <Content Include="Scripts\js\jchartfx.highlowclose.js" />
+    <Content Include="Scripts\js\jchartfx.maps.js" />
+    <Content Include="Scripts\js\jchartfx.overlaybubble.js" />
+    <Content Include="Scripts\js\jchartfx.pareto.js" />
+    <Content Include="Scripts\js\jchartfx.pyramid.js" />
+    <Content Include="Scripts\js\jchartfx.radar.js" />
+    <Content Include="Scripts\js\jchartfx.rose.js" />
+    <Content Include="Scripts\js\jchartfx.sparkline.js" />
+    <Content Include="Scripts\js\jchartfx.surface.js" />
+    <Content Include="Scripts\js\jchartfx.system.js" />
+    <Content Include="Scripts\js\jchartfx.treemap.js" />
+    <Content Include="Scripts\js\jchartfx.ui.js" />
+    <Content Include="Scripts\js\jchartfx.vector.js" />
+    <Content Include="Scripts\js\jchartfx.vectorTemplates.js" />
+    <Content Include="Scripts\localjavascript\jchartfx.advanced.js" />
+    <Content Include="Scripts\localjavascript\jchartfx.coreVector.js" />
+    <Content Include="Scripts\localjavascript\jchartfx.funnel.js" />
+    <Content Include="Scripts\localjavascript\jchartfx.gauge.js" />
+    <Content Include="Scripts\localjavascript\jchartfx.motif.js" />
+    <Content Include="Scripts\localjavascript\jchartfx.system.js" />
+    <Content Include="Scripts\localjavascript\jquery-1.7.1.js" />
+    <Content Include="Scripts\motifs\jchartfx.motif.aurora.js" />
+    <Content Include="Scripts\motifs\jchartfx.motif.glow.js" />
+    <Content Include="Scripts\motifs\jchartfx.motif.handdrawn.js" />
+    <Content Include="Scripts\motifs\jchartfx.motif.healthy.js" />
+    <Content Include="Scripts\motifs\jchartfx.motif.hook.js" />
+    <Content Include="Scripts\motifs\jchartfx.motif.js" />
+    <Content Include="Scripts\motifs\jchartfx.motif.lizard.js" />
+    <Content Include="Scripts\motifs\jchartfx.motif.metro.js" />
+    <Content Include="Scripts\motifs\jchartfx.motif.topbar.js" />
+    <Content Include="Scripts\motifs\jchartfx.motif.whitespace.js" />
+    <Content Include="Scripts\motifs\max.jchartfx.motif.aurora.js" />
+    <Content Include="Scripts\motifs\max.jchartfx.motif.glow.js" />
+    <Content Include="Scripts\motifs\max.jchartfx.motif.handdrawn.js" />
+    <Content Include="Scripts\motifs\max.jchartfx.motif.healthy.js" />
+    <Content Include="Scripts\motifs\max.jchartfx.motif.hook.js" />
+    <Content Include="Scripts\motifs\max.jchartfx.motif.js" />
+    <Content Include="Scripts\motifs\max.jchartfx.motif.lizard.js" />
+    <Content Include="Scripts\motifs\max.jchartfx.motif.metro.js" />
+    <Content Include="Scripts\motifs\max.jchartfx.motif.topbar.js" />
+    <Content Include="Scripts\motifs\max.jchartfx.motif.whitespace.js" />
+    <Content Include="Scripts\SampleDashboard1\Intellisense\cfx.visualStudio.intellisense.js" />
+    <Content Include="Scripts\SampleDashboard1\Intellisense\cfx.visualStudio.js" />
+    <Content Include="Scripts\SampleDashboard1\SampleDashboard1.js" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.aurora.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.black-tie.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.blitzer.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.cupertino.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.dark-hive.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.dot-luv.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.eggplant.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.excite-bike.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.flick.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.glow.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.handdrawn.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.healthy.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.hook.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.hot-sneaks.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.humanity.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.le-frog.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.lizard.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.metro.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.mint-choc.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.overcast.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.pepper-grinder.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.redmond.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.smoothness.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.south-street.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.start.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.sunny.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.swanky-purse.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.topbar.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.trontastic.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.ui-darkness.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.ui-lightness.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.vader.css" />
+    <Content Include="Scripts\styles\Attributes\jchartfx.attributes.whitespace.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.adventure.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.alternate.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.aurora.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.autumn.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.black-n-blue.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.black-tie.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.blitzer.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.brown-sugar.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.chartfx5.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.chartfx6.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.chartfx7.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.classic.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.colorful.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.cupertino.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.dark-hive.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.darkpastels.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.dot-luv.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.earth-tones.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.eggplant.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.excite-bike.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.flick.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.glow.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.handdrawn.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.healthy.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.high-contrast.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.hook.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.hot-sneaks.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.humanity.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.le-frog.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.lilacs-in-mist.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.lite.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.lizard.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.mesa.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.metro.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.mint-choc.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.mocha.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.modern-business.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.oceanica.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.overcast.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.pastels.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.pepper-grinder.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.pocket.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.professional.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.rainy-day.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.redmond.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.sand-n-sky.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.simple.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.sky.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.slate.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.smoothness.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.snowy-pine.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.south-street.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.start.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.sunny.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.swanky-purse.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.topbar.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.trontastic.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.ui-darkness.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.ui-lightness.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.vader.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.vivid.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.whitespace.css" />
+    <Content Include="Scripts\styles\Palettes\jchartfx.palette.windows.css" />
+    <Content Include="SiteDomainMapList\Elements.xml" />
+    <Content Include="SiteDomainMapList\Schema.xml" />
+    <Content Include="SiteDomainMapList\SiteDomainMapListInstance\Elements.xml" />
+    <Content Include="SiteFacilities\Elements.xml" />
+    <Content Include="SiteFacilities\Schema.xml" />
+    <Content Include="SiteFacilities\SiteFacilitiesInstance\Elements.xml" />
+    <Content Include="SiteRepresentatives\Elements.xml" />
+    <Content Include="SiteRepresentatives\Schema.xml" />
+    <Content Include="SiteRepresentatives\SiteRepresentativesInstance\Elements.xml" />
+    <Content Include="SiteSubDomainMapList\Elements.xml" />
+    <Content Include="SiteSubDomainMapList\Schema.xml" />
+    <Content Include="SiteSubDomainMapList\SiteSubDomainMapListInstance\Elements.xml" />
+    <Content Include="Styles\datatable.css" />
+    <Content Include="Styles\dataTables.jqueryui.css" />
+    <Content Include="Styles\dt1.4\jquery.dataTables.css" />
+    <Content Include="Styles\jquery-ui.css" />
+    <Content Include="UniversityDomain\Elements.xml" />
+    <Content Include="UniversityDomain\Schema.xml" />
+    <Content Include="UniversityDomain\UniversityDomainInstance\Elements.xml" />
+    <Content Include="UniversitySubDomain\Elements.xml" />
+    <Content Include="UniversitySubDomain\Schema.xml" />
+    <Content Include="UniversitySubDomain\UniversitySubDomainInstance\Elements.xml" />
+    <Content Include="UnivesityDomainMapList\Elements.xml" />
+    <Content Include="UnivesityDomainMapList\Schema.xml" />
+    <Content Include="UnivesityDomainMapList\UnivesityDomainMapListInstance\Elements.xml" />
+    <Content Include="UnivesitySubDomainMapList\Elements.xml" />
+    <Content Include="UnivesitySubDomainMapList\Schema.xml" />
+    <Content Include="UnivesitySubDomainMapList\UnivesitySubDomainMapListInstance\Elements.xml" />
+    <Content Include="UserRoles\Elements.xml" />
+    <Content Include="UserRoles\Schema.xml" />
+    <Content Include="UserRoles\UserRolesInstance\Elements.xml" />
+    <Content Include="WorkflowHistoryList\Elements.xml" />
+    <Content Include="WorkflowTaskList\Elements.xml" />
+    <None Include="codebase\sources\dhtmlxscheduler.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_active_links.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_agenda_view.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_all_timed.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_collision.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_container_autoresize.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_cookie.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_editors.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_expand.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_grid_view.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_html_templates.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_key_nav.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_layer.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_limit.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_map_view.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_minical.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_monthheight.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_multisection.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_multiselect.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_multisource.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_mvc.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_offline.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_outerdrag.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_pdf.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_quick_info.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_readonly.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_recurring.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_serialize.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_timeline.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_tooltip.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_treetimeline.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_units.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_url.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_week_agenda.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_wp.js.map" />
+    <None Include="codebase\sources\ext\dhtmlxscheduler_year_view.js.map" />
+    <None Include="Employee\EmployeeInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{32a3f446-d49f-40d9-a35c-ca1292aacb14}</SharePointProjectItemId>
+    </None>
+    <None Include="Employee\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7e99eb3d-394b-404c-8495-4c9d825a9aee}</SharePointProjectItemId>
+    </None>
+    <None Include="EMSUsers\EMSUsersInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d537209d-bc83-4c1c-b058-a6d751223acd}</SharePointProjectItemId>
+    </None>
+    <None Include="EMSUsers\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7bf7f9ad-ec65-4100-9ece-15d6c161169e}</SharePointProjectItemId>
+    </None>
+    <None Include="EventDomainMapList\EventDomainMapListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d3212f73-5b43-496d-bcd0-139b72df8fc8}</SharePointProjectItemId>
+    </None>
+    <None Include="EventDomainMapList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a27789e3-d875-47e8-be26-9a907d3549e4}</SharePointProjectItemId>
+    </None>
+    <None Include="EventFacilities\EventFacilitiesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1667248d-c641-4b63-b144-3039c4861dc7}</SharePointProjectItemId>
+    </None>
+    <None Include="EventFacilities\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0cc497d9-d6c5-4f8d-afcb-d3d58d051467}</SharePointProjectItemId>
+    </None>
+    <None Include="EventFeedback\EventFeedbackInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{064bb72f-fd2c-4924-af7a-68b89366cd9e}</SharePointProjectItemId>
+    </None>
+    <None Include="EventFeedback\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f5c3f99a-d4a6-4e2b-b9ba-600e5baec183}</SharePointProjectItemId>
+    </None>
+    <None Include="EventList\EventListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7aee622a-ecef-4590-a7d4-e3ad41e972c8}</SharePointProjectItemId>
+    </None>
+    <None Include="EventList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{06f058bc-960d-438d-bdad-c5803f92f4b4}</SharePointProjectItemId>
+    </None>
+    <None Include="EventSubDomainMapList\EventSubDomainMapListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fa36d488-6cbf-40c7-805a-cdf5fc06a52e}</SharePointProjectItemId>
+    </None>
+    <None Include="EventSubDomainMapList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9c737c13-de25-4a97-8505-f75e64d5e300}</SharePointProjectItemId>
+    </None>
+    <None Include="Organizations\OrganizationsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4d85b374-80a4-4e6d-a6d3-9279d2ade700}</SharePointProjectItemId>
+    </None>
+    <None Include="Organizations\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{19a17353-c5a8-41a9-a090-87a7ee90ea8d}</SharePointProjectItemId>
+    </None>
+    <None Include="OrganizationType\OrganizationTypeInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dde3efd6-2522-4c98-aa04-277d56bbe08f}</SharePointProjectItemId>
+    </None>
+    <None Include="OrganizationType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{48d2fb03-b8b0-446e-965e-2d54f453d6e3}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1e790f50-bfc8-47d5-bb3f-20b7699f1ecb}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\jquery-ui-1.10.2.custom.css" />
+    <Content Include="Employee\Elements.xml" />
+    <Content Include="Employee\EmployeeInstance\Elements.xml" />
+    <Content Include="Employee\Schema.xml" />
+    <Content Include="EventList\Elements.xml" />
+    <Content Include="EventList\EventListInstance\Elements.xml" />
+    <Content Include="EventList\Schema.xml" />
+    <Content Include="Images\calendar.gif" />
+    <Content Include="Organizations\Elements.xml" />
+    <Content Include="Organizations\OrganizationsInstance\Elements.xml" />
+    <Content Include="Organizations\Schema.xml" />
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\Default.aspx" />
+    <None Include="RoomFacilities\RoomFacilitiesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{22a3fbba-7677-4a41-be9f-0395583d74ae}</SharePointProjectItemId>
+    </None>
+    <None Include="RoomFacilities\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f587a0fd-8aab-42b4-9049-6f9c85ab2d2c}</SharePointProjectItemId>
+    </None>
+    <None Include="ScheduledEvents\ScheduledEventsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{95ffb532-2017-44a3-9430-20e14aaafef4}</SharePointProjectItemId>
+    </None>
+    <None Include="ScheduledEvents\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{52db0d2c-9c78-43d3-9f57-a6a69ac12894}</SharePointProjectItemId>
+    </None>
+    <None Include="SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ebd6d9c7-7c7f-4df4-a39a-0a7a27ce64a5}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteDomainMapList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6aeffe80-aa9c-4395-9d4c-7920207c77dd}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteDomainMapList\SiteDomainMapListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{eaf7716c-abc5-41e2-83ff-39dfd4d16c4a}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteFacilities\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{689020f2-222f-456d-a443-2178a340d345}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteFacilities\SiteFacilitiesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{13c6004c-4568-4ebc-840a-64ce61f60d64}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteRepresentatives\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c714bca4-f42a-405b-b965-87d9e21e8e20}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteRepresentatives\SiteRepresentativesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{46e9dece-e40f-4729-8936-d2b966ccbaa5}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteSubDomainMapList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{08f67e32-652e-4588-b977-080cb399a28e}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteSubDomainMapList\SiteSubDomainMapListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d77439c2-46bb-4285-b691-57227f4cec6c}</SharePointProjectItemId>
+    </None>
+    <None Include="UniversityDomain\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{48099794-fbe5-4e07-af79-481aa376eae7}</SharePointProjectItemId>
+    </None>
+    <None Include="UniversityDomain\UniversityDomainInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a00f2901-c112-40ed-b842-614f5e9edb9d}</SharePointProjectItemId>
+    </None>
+    <None Include="UniversitySubDomain\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b635d2cf-1a4f-433b-a5b0-7a8bc4932154}</SharePointProjectItemId>
+    </None>
+    <None Include="UniversitySubDomain\UniversitySubDomainInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{37289e43-728f-4b95-a7bf-67d0218aed9e}</SharePointProjectItemId>
+    </None>
+    <None Include="UnivesityDomainMapList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{695f57cd-13a0-4cd4-9192-e1ac3fe83a75}</SharePointProjectItemId>
+    </None>
+    <None Include="UnivesityDomainMapList\UnivesityDomainMapListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{96cd9c1c-ab52-417f-b219-7b9f0e0de749}</SharePointProjectItemId>
+    </None>
+    <None Include="UnivesitySubDomainMapList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2d30d301-6c1c-4687-ad52-66f952fd1423}</SharePointProjectItemId>
+    </None>
+    <None Include="UnivesitySubDomainMapList\UnivesitySubDomainMapListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{585705ea-30a9-47dc-a173-4367c2c65768}</SharePointProjectItemId>
+    </None>
+    <None Include="UserRoles\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0890c5c1-b0bd-49a5-8e6f-eccf85b96a88}</SharePointProjectItemId>
+    </None>
+    <None Include="UserRoles\UserRolesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cf8b1b44-ae44-4338-b50a-ab02b386056b}</SharePointProjectItemId>
+    </None>
+    <None Include="WorkflowHistoryList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ca163deb-786b-4569-abc3-26dbee0cd911}</SharePointProjectItemId>
+    </None>
+    <None Include="WorkflowTaskList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{04ca775d-c986-49a4-a1ed-22ee0f053ec9}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PSites\PSitesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{44446202-c481-4495-99bf-89581b1dc262}</SharePointProjectItemId>
+    </None>
+    <None Include="PSites\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{09887a96-e179-42b9-aa07-597eeed84dc3}</SharePointProjectItemId>
+    </None>
+    <None Include="Representative\RepresentativeInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cf61bb92-503f-4738-ac6e-118f31fece17}</SharePointProjectItemId>
+    </None>
+    <None Include="Representative\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{59658eb3-1f5d-43ca-9b84-ee2dfac2e099}</SharePointProjectItemId>
+    </None>
+    <None Include="Resources\ResourcesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8579c83d-6dfd-4605-92b6-aa66fae51892}</SharePointProjectItemId>
+    </None>
+    <None Include="Resources\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{883b3529-cfa4-42d0-b455-768750be0f34}</SharePointProjectItemId>
+    </None>
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f0db56ab-3ee4-4546-a4bb-5153f5fee3dc}</SharePointProjectItemId>
+    </None>
+    <Content Include="PSites\Elements.xml" />
+    <Content Include="PSites\PSitesInstance\Elements.xml" />
+    <Content Include="PSites\Schema.xml" />
+    <Content Include="Representative\Elements.xml" />
+    <Content Include="Representative\RepresentativeInstance\Elements.xml" />
+    <Content Include="Representative\Schema.xml" />
+    <Content Include="Resources\Elements.xml" />
+    <Content Include="Resources\ResourcesInstance\Elements.xml" />
+    <Content Include="Resources\Schema.xml" />
+    <Content Include="Scripts\date.js" />
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\App.js" />
+    <Content Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.10.2.js" />
+    <Content Include="Scripts\jquery-ui-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-ui-timepicker.js" />
+    <Content Include="Scripts\jquery-ui1.10.2.js" />
+    <Content Include="Scripts\jquery-ui1.10.2.min.js" />
+    <Content Include="Scripts\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{40a56830-e78d-4a6e-939d-55e1a08b9af6}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\Elements.xml" />
+    <Content Include="Content\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{daf0ecd6-2c60-48a3-925c-80293b3fa76e}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{0d19c457-9126-4bd4-9529-0872924cf367}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{80db7e25-86db-46fb-b1d8-f9334a9b4195}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Activities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.DesignTime.Activities, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

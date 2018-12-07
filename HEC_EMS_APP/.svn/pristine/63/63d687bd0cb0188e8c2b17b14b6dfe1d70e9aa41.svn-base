@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="EventList" Direction="$Resources:Direction;" Url="Lists/EventList" EnableContentTypes="TRUE" MultipleTypes="TRUE" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+    <ContentType ID="0x01009961d5494b734ebab79cf8c45222fce6" Name="ListFieldsContentType"><FieldRefs>
+    <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Name="EventDate" /><FieldRef ID="{2684f9f2-54be-429f-ba06-76754fc056bf}" Name="EndDate" /><FieldRef ID="{8137f7ad-9170-4c1d-a17b-4ca7f557bc88}" Name="ParticipantsPicker" /><FieldRef ID="{bad99e8d-3f91-4479-9f5b-615bea401f42}" Name="SiteLookup" /><FieldRef ID="{937b869a-3ab7-4afa-bfde-f2b1539575f2}" Name="StudentPC" /><FieldRef ID="{7d0f9861-0a26-4aa1-af64-fbd0f4526d3c}" Name="InstructorPC" /><FieldRef ID="{50ea5773-c097-4807-a6eb-fae12f1e44fd}" Name="EventCap" /><FieldRef ID="{584ebf32-5dee-4ca4-a50d-10a64ef123d0}" Name="EventDescription" /><FieldRef ID="{2f137f8e-da0d-4183-b731-650f5135fe6a}" Name="TypeofEvent" /><FieldRef ID="{28557011-f408-43e7-ab4b-4f944288db0b}" Name="EventDiscispline" /><FieldRef ID="{5248105a-f723-4f3b-8a67-edf3226ef9ef}" Name="EventLocal" /><FieldRef ID="{c338b662-75e8-4064-a36c-9ff09f426032}" Name="EventOpen" /><FieldRef ID="{a641c647-bec8-4ebe-8516-5532bc6fd60d}" Name="EventStatus" /><FieldRef ID="{7898acb5-9610-48bc-a9f5-70f4f7b071e1}" Name="CustomCreatedBy" /><FieldRef ID="{b8928c2c-3a4f-486d-956f-403f69d03a0b}" Name="CustomModifiedBy" /><FieldRef ID="{e100d829-df45-42fe-aec4-957715bd8270}" Name="Charges" /><FieldRef ID="{77281302-29aa-42e4-9971-e76568a4909b}" Name="FinalCharges" /><FieldRef ID="{5cae2cc2-f05c-4fcc-a8c3-e375ae1bad8a}" Name="FinalChargeDescription" /><FieldRef ID="{316aace6-fd42-410e-84a2-92179bfa8866}" Name="IsRecurring" /><FieldRef ID="{f3202730-80ed-4a76-8c31-ac50c3fa7107}" Name="RecurringEventId" /><FieldRef ID="{51ec83d1-e93a-49fb-ab21-344f35aa3ade}" Name="SiteLookupTitle" /><FieldRef ID="{4deb2c42-8e43-45fb-ac79-5058c0e341a0}" Name="ICSFile" /><FieldRef ID="{e077ec37-b202-47bf-8c25-0e163c5ffeb5}" Name="ImgURL" /></FieldRefs>
+    </ContentType><ContentTypeRef ID="0x0102">
+        <Folder TargetName="Event" />
+      </ContentTypeRef></ContentTypes>
+    <Fields>  
+    
+      
+      
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Type="DateTime" ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Name="EventDate" DisplayName="Start Time" Format="DateTime" Sealed="TRUE" Required="TRUE" FromBaseType="TRUE" Filterable="FALSE" FilterableNoRecurrence="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="EventDate" ReadOnly="FALSE">
+        <Default>[today]</Default>
+        <FieldRefs>
+          <FieldRef Name="fAllDayEvent" RefType="AllDayEvent" />
+        </FieldRefs>
+      </Field><Field ID="{2684f9f2-54be-429f-ba06-76754fc056bf}" Type="DateTime" Name="EndDate" DisplayName="$Resources:core,End_Time;" Format="DateTime" Sealed="TRUE" Required="TRUE" Filterable="FALSE" FilterableNoRecurrence="TRUE" Indexed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="EndDate" ReadOnly="FALSE">
+        <Default>[today]</Default>
+        <FieldRefs>
+          <FieldRef Name="fAllDayEvent" RefType="AllDayEvent" />
+        </FieldRefs>
+      </Field><Field ID="{8137f7ad-9170-4c1d-a17b-4ca7f557bc88}" Name="ParticipantsPicker" DisplayName="$Resources:core,ParticipantsPicker;" Type="UserMulti" List="UserInfo" Mult="TRUE" Required="FALSE" ShowField="ImnName" UserSelectionMode="PeopleAndGroups" UserSelectionScope="0" Sortable="FALSE" Sealed="FALSE" AllowDeletion="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="ParticipantsPicker"></Field><Field Name="SiteLookup" ID="{bad99e8d-3f91-4479-9f5b-615bea401f42}" DisplayName="SiteLookup" Type="Lookup" List="Lists/PSites" ShowField="ID" /><Field Name="StudentPC" ID="{937b869a-3ab7-4afa-bfde-f2b1539575f2}" DisplayName="StudentPC" Type="Number" /><Field Name="InstructorPC" ID="{7d0f9861-0a26-4aa1-af64-fbd0f4526d3c}" DisplayName="InstructorPC" Type="Number" /><Field Name="EventCap" ID="{50ea5773-c097-4807-a6eb-fae12f1e44fd}" DisplayName="EventCap" Type="Number" /><Field Name="EventDescription" ID="{584ebf32-5dee-4ca4-a50d-10a64ef123d0}" DisplayName="EventDescription" Type="Text" /><Field Name="TypeofEvent" ID="{2f137f8e-da0d-4183-b731-650f5135fe6a}" DisplayName="TypeofEvent" Type="Number" /><Field Name="EventDiscispline" ID="{28557011-f408-43e7-ab4b-4f944288db0b}" DisplayName="EventDiscispline" Type="Text" /><Field Name="EventLocal" ID="{5248105a-f723-4f3b-8a67-edf3226ef9ef}" DisplayName="EventLocal" Type="Boolean" /><Field Name="EventOpen" ID="{c338b662-75e8-4064-a36c-9ff09f426032}" DisplayName="EventOpen" Type="Boolean" /><Field Name="EventStatus" ID="{a641c647-bec8-4ebe-8516-5532bc6fd60d}" DisplayName="EventStatus" Type="Choice">
+      <CHOICES>
+        
+        
+        
+      <CHOICE>New</CHOICE><CHOICE>Approved</CHOICE><CHOICE>Rejected</CHOICE></CHOICES>
+      </Field><Field Name="CustomCreatedBy" ID="{7898acb5-9610-48bc-a9f5-70f4f7b071e1}" DisplayName="CustomCreatedBy" Type="Text" /><Field Name="CustomModifiedBy" ID="{b8928c2c-3a4f-486d-956f-403f69d03a0b}" DisplayName="CustomModifiedBy" Type="Text" /><Field Name="Charges" ID="{e100d829-df45-42fe-aec4-957715bd8270}" DisplayName="Charges" Type="Number" /><Field Name="FinalCharges" ID="{77281302-29aa-42e4-9971-e76568a4909b}" DisplayName="FinalCharges" Type="Number" /><Field Name="FinalChargeDescription" ID="{5cae2cc2-f05c-4fcc-a8c3-e375ae1bad8a}" DisplayName="FinalChargeDescription" Type="Text" /><Field Name="IsRecurring" ID="{316aace6-fd42-410e-84a2-92179bfa8866}" DisplayName="IsRecurring" Type="Boolean" /><Field Name="RecurringEventId" ID="{f3202730-80ed-4a76-8c31-ac50c3fa7107}" DisplayName="RecurrenceEventId" Type="Number" /><Field Name="SiteLookupTitle" ID="{51ec83d1-e93a-49fb-ab21-344f35aa3ade}" DisplayName="SiteLookupTitle" Type="Text" /><Field Name="ICSFile" ID="{4deb2c42-8e43-45fb-ac79-5058c0e341a0}" DisplayName="ICSFile" Type="Text" /><Field Name="ImgURL" ID="{e077ec37-b202-47bf-8c25-0e163c5ffeb5}" DisplayName="ImgURL" Type="Text" /></Fields>
+    <Views>
+    <View BaseViewID="0" Type="HTML" RecurrenceRowset="TRUE" TabularView="FALSE" MobileView="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink>main.xsl</XslLink>
+        <Query>
+          <Where>
+            <DateRangesOverlap>
+              <FieldRef Name="EventDate"></FieldRef>
+              <FieldRef Name="EndDate"></FieldRef>
+              <FieldRef Name="RecurrenceID"></FieldRef>
+              <Value Type="DateTime">
+                <Now />
+              </Value>
+            </DateRangesOverlap>
+          </Where>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noevents_toaddeventclickaddnewevent)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noevents_toaddeventclickaddnewevent_howto)" />
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,AddNewEvent)" />
+          <ParameterBinding Name="MoreAnnouncements" Location="Resource(wss,more_events)" />
+        </ParameterBindings>
+        <ViewFields>
+          
+          
+          
+          
+        <FieldRef Name="EventDate" Explicit="TRUE"></FieldRef><FieldRef Name="LinkTitleNoMenu" Explicit="TRUE"></FieldRef><FieldRef Name="Description" Explicit="TRUE"></FieldRef><FieldRef Name="fRecurrence" Explicit="TRUE"></FieldRef></ViewFields>
+        <RowLimit>10</RowLimit>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="EventDate"></FieldRef>
+          </OrderBy>
+        </Query>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_alleventsview;" MobileView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" Url="AllItems.aspx" DefaultBaseView="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+        <ViewFields>
+          
+          
+          
+          
+          
+          
+          
+        <FieldRef Name="ID" /><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="EventDate"></FieldRef><FieldRef Name="EndDate"></FieldRef><FieldRef Name="ParticipantsPicker" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="EventDate"></FieldRef></OrderBy>
+        </Query>
+      </View><View BaseViewID="2" Type="CALENDAR" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_calendarview;" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="calendar.aspx" RecurrenceRowset="TRUE" DefaultView="TRUE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
+        <Toolbar Type="Standard" />
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+        <ViewFields>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        
+          <FieldRef Name="ID" /><FieldRef Name="EventDate"></FieldRef><FieldRef Name="EndDate"></FieldRef><FieldRef Name="Title"></FieldRef><FieldRef Name="StudentPC" /><FieldRef Name="InstructorPC" /><FieldRef Name="EventCap" /><FieldRef Name="EventDescription" /><FieldRef Name="TypeofEvent" /><FieldRef Name="EventDiscispline" /><FieldRef Name="EventOpen" /><FieldRef Name="EventStatus" /><FieldRef Name="Created" /><FieldRef Name="Author" /><FieldRef Name="Modified" /><FieldRef Name="Editor" /><FieldRef Name="CustomCreatedBy" /><FieldRef Name="CustomModifiedBy" /><FieldRef Name="Charges" /><FieldRef Name="FinalCharges" /><FieldRef Name="FinalChargeDescription" /><FieldRef Name="IsRecurring" /><FieldRef Name="RecurringEventId" /><FieldRef Name="SiteLookupTitle" /><FieldRef Name="ICSFile" /><FieldRef Name="ImgURL" /></ViewFields>
+        <ViewData>
+          <FieldRef Name="Title" Type="CalendarMonthTitle"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarWeekTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarWeekLocation"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarDayTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarDayLocation"></FieldRef>
+        </ViewData>
+        <Query>
+          <Where>
+            <DateRangesOverlap>
+              <FieldRef Name="EventDate"></FieldRef>
+              <FieldRef Name="EndDate"></FieldRef>
+              <FieldRef Name="RecurrenceID"></FieldRef>
+              <Value Type="DateTime">
+                <Month></Month>
+              </Value>
+            </DateRangesOverlap>
+          </Where>
+        </Query>
+      </View><View BaseViewID="3" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_curreventsview;" MobileView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" Url="MyItems.aspx" ReqAuth="TRUE" RecurrenceRowset="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+        <ViewFields>
+          
+          
+          
+          
+          
+          
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="EventDate"></FieldRef><FieldRef Name="EndDate"></FieldRef></ViewFields>
+        <Query>
+          <Where>
+            <DateRangesOverlap>
+              <FieldRef Name="EventDate" />
+              <FieldRef Name="EndDate" />
+              <FieldRef Name="RecurrenceID" />
+              <Value Type="DateTime">
+                <Now></Now>
+              </Value>
+            </DateRangesOverlap>
+          </Where>
+          <OrderBy>
+            
+          <FieldRef Name="EventDate"></FieldRef></OrderBy>
+        </Query>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

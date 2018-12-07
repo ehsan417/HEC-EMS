@@ -1,0 +1,69 @@
+C:\Users\spfarmadmin\Documents\Visual Studio 2013\Projects\Event manager app\C#\SP_TrainingEventManager_js\bin\Debug\SP_TrainingEventManager_js.pdb
+C:\Users\spfarmadmin\Documents\Visual Studio 2013\Projects\Event manager app\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.dll
+C:\Users\spfarmadmin\Documents\Visual Studio 2013\Projects\Event manager app\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.pdb
+C:\Users\ksyed\Documents\Visual Studio 2013\Projects\Event manager appprovider hosted\C#\SP_TrainingEventManager_js\bin\Debug\SP_TrainingEventManager_js.pdb
+C:\Users\ksyed\Documents\Visual Studio 2013\Projects\Event manager appprovider hosted\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.dll
+C:\Users\ksyed\Documents\Visual Studio 2013\Projects\Event manager appprovider hosted\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.pdb
+C:\HEC App Deployment\10Dec - Event Details\C#\SP_TrainingEventManager_js\bin\Debug\SP_TrainingEventManager_js.pdb
+C:\HEC App Deployment\10Dec - Event Details\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.dll
+C:\HEC App Deployment\10Dec - Event Details\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.pdb
+C:\Users\ksyed\Documents\Visual Studio 2013\Projects\11Dec\C#\SP_TrainingEventManager_js\bin\Debug\SP_TrainingEventManager_js.pdb
+C:\Users\ksyed\Documents\Visual Studio 2013\Projects\11Dec\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager.csprojResolveAssemblyReference.cache
+C:\Users\ksyed\Documents\Visual Studio 2013\Projects\11Dec\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.dll
+C:\Users\ksyed\Documents\Visual Studio 2013\Projects\11Dec\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.pdb
+C:\@!\C#\SP_TrainingEventManager_js\bin\Debug\SP_TrainingEventManager_js.pdb
+C:\@!\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager.csprojResolveAssemblyReference.cache
+C:\@!\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.dll
+C:\@!\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.pdb
+C:\Jan5th LatestFixedCode\C#\SP_TrainingEventManager_js\bin\Debug\SP_TrainingEventManager_js.pdb
+C:\Jan5th LatestFixedCode\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager.csprojResolveAssemblyReference.cache
+C:\Jan5th LatestFixedCode\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.dll
+C:\Jan5th LatestFixedCode\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.pdb
+E:\Rafiq Working Dir\Working\january 5,2015\C#\SP_TrainingEventManager_js\bin\Debug\SP_TrainingEventManager_js.pdb
+E:\Rafiq Working Dir\Working\january 5,2015\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.dll
+E:\Rafiq Working Dir\Working\january 5,2015\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.pdb
+C:\9 Jan Code Merge\Rafiq\C#\SP_TrainingEventManager_js\bin\Debug\SP_TrainingEventManager_js.pdb
+C:\9 Jan Code Merge\Rafiq\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.dll
+C:\9 Jan Code Merge\Rafiq\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.pdb
+C:\HEC Project\working Projects\13-1-15\1107\MergedCode\C#\SP_TrainingEventManager_js\bin\Debug\SP_TrainingEventManager_js.pdb
+C:\HEC Project\working Projects\13-1-15\1107\MergedCode\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager.csprojResolveAssemblyReference.cache
+C:\HEC Project\working Projects\13-1-15\1107\MergedCode\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.dll
+C:\HEC Project\working Projects\13-1-15\1107\MergedCode\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.pdb
+C:\9 Jan Code Merge\Ehsan- Latest\13-1-14\C#\SP_TrainingEventManager_js\bin\Debug\SP_TrainingEventManager_js.pdb
+C:\9 Jan Code Merge\Ehsan- Latest\13-1-14\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager.csprojResolveAssemblyReference.cache
+C:\9 Jan Code Merge\Ehsan- Latest\13-1-14\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.dll
+C:\9 Jan Code Merge\Ehsan- Latest\13-1-14\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.pdb
+F:\Ehsan- Latest\13-1-14\C#\SP_TrainingEventManager_js\bin\Debug\SP_TrainingEventManager_js.pdb
+F:\Ehsan- Latest\13-1-14\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager.csprojResolveAssemblyReference.cache
+F:\Ehsan- Latest\13-1-14\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.dll
+F:\Ehsan- Latest\13-1-14\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.pdb
+C:\HEC Project\working Projects\14-1-15\madam code 2\Ehsan- Latest\13-1-14\C#\SP_TrainingEventManager_js\bin\Debug\SP_TrainingEventManager_js.pdb
+C:\HEC Project\working Projects\14-1-15\madam code 2\Ehsan- Latest\13-1-14\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager.csprojResolveAssemblyReference.cache
+C:\HEC Project\working Projects\14-1-15\madam code 2\Ehsan- Latest\13-1-14\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.dll
+C:\HEC Project\working Projects\14-1-15\madam code 2\Ehsan- Latest\13-1-14\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.pdb
+C:\9 Jan Code Merge\Ehsan- Latest\15-11-15\C#\SP_TrainingEventManager_js\bin\Debug\SP_TrainingEventManager_js.pdb
+C:\9 Jan Code Merge\Ehsan- Latest\15-11-15\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.dll
+C:\9 Jan Code Merge\Ehsan- Latest\15-11-15\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.pdb
+C:\HEC-EMS\XELLPAK-EMS\SP_TrainingEventManager_js\bin\Debug\SP_TrainingEventManager_js.pdb
+C:\HEC-EMS\XELLPAK-EMS\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.dll
+C:\HEC-EMS\XELLPAK-EMS\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.pdb
+C:\WORK\HEC\CODE\XELLPAK-EMS\SP_TrainingEventManager_js\bin\Debug\SP_TrainingEventManager_js.pdb
+C:\WORK\HEC\CODE\XELLPAK-EMS\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager.csprojResolveAssemblyReference.cache
+C:\WORK\HEC\CODE\XELLPAK-EMS\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.dll
+C:\WORK\HEC\CODE\XELLPAK-EMS\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.pdb
+C:\HEC Project\working Projects\HEC_EMSV1.0\SP_TrainingEventManager_js\bin\Debug\SP_TrainingEventManager_js.pdb
+C:\HEC Project\working Projects\HEC_EMSV1.0\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.dll
+C:\HEC Project\working Projects\HEC_EMSV1.0\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.pdb
+C:\Fresh Copy - Ehsan\HEC_EMSV1.3\SP_TrainingEventManager_js\bin\Debug\SP_TrainingEventManager_js.pdb
+C:\Fresh Copy - Ehsan\HEC_EMSV1.3\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.dll
+C:\Fresh Copy - Ehsan\HEC_EMSV1.3\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.pdb
+C:\Users\spfarmadmin\Desktop\HEC_EMS LATEST\Fresh Copy - Ehsan\HEC_EMSV1.3\SP_TrainingEventManager_js\bin\Debug\SP_TrainingEventManager_js.pdb
+C:\Users\spfarmadmin\Desktop\HEC_EMS LATEST\Fresh Copy - Ehsan\HEC_EMSV1.3\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.dll
+C:\Users\spfarmadmin\Desktop\HEC_EMS LATEST\Fresh Copy - Ehsan\HEC_EMSV1.3\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.pdb
+C:\HEC Project\Finalize Projects\F1\HEC_EMS LATEST\Fresh Copy - Ehsan\HEC_EMSV1.3\SP_TrainingEventManager_js\bin\Debug\SP_TrainingEventManager_js.pdb
+C:\HEC Project\Finalize Projects\F1\HEC_EMS LATEST\Fresh Copy - Ehsan\HEC_EMSV1.3\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager.csprojResolveAssemblyReference.cache
+C:\HEC Project\Finalize Projects\F1\HEC_EMS LATEST\Fresh Copy - Ehsan\HEC_EMSV1.3\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.dll
+C:\HEC Project\Finalize Projects\F1\HEC_EMS LATEST\Fresh Copy - Ehsan\HEC_EMSV1.3\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.pdb
+C:\HEC-EMS Working Copy\14April2015\HEC_EMS LATEST\Fresh Copy - Ehsan\HEC_EMSV1.3\SP_TrainingEventManager_js\bin\Debug\SP_TrainingEventManager_js.pdb
+C:\HEC-EMS Working Copy\14April2015\HEC_EMS LATEST\Fresh Copy - Ehsan\HEC_EMSV1.3\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.dll
+C:\HEC-EMS Working Copy\14April2015\HEC_EMS LATEST\Fresh Copy - Ehsan\HEC_EMSV1.3\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.pdb

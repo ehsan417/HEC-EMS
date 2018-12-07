@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="ScheduledEvents" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/ScheduledEvents" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    
+      
+	
+	<ContentType ID="0x010063dcce45aa0d45cbbd6492bb76a8bd33" Name="ListFieldsContentType">
+          <FieldRefs>
+	        
+		
+		
+		
+		
+		
+	<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{fab01c0f-65e8-4cfe-a3b7-668f1023d16b}" Name="EventID" /><FieldRef ID="{48d8911c-d601-4051-a356-66548812267f}" Name="ResourceID" />
+            <FieldRef ID="{9137f768-a94b-415c-a1d3-be8978efaef0}" Name="Status" />
+            <FieldRef ID="{3142c9e7-43c5-423e-9986-c3fe7fa38123}" Name="StartDate1" />
+            <FieldRef ID="{a864ff61-dd4f-4d63-8ccd-14847a3ef788}" Name="EndDate1" />
+            <FieldRef ID="{0fe1b390-6ad3-47ff-a224-d183e4aef68e}" Name="ScheduleStatus"/>
+             
+            </FieldRefs>
+	</ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+	</ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    
+      
+    
+    
+    
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="EventID" ID="{fab01c0f-65e8-4cfe-a3b7-668f1023d16b}" DisplayName="EventID" Type="Lookup" List="Lists/EventList" ShowField="ID" /><Field Name="ResourceID" ID="{48d8911c-d601-4051-a356-66548812267f}" DisplayName="RoomID" Type="Lookup" List="Lists/Resources" ShowField="ID" />
+      <Field Name="Status" ID="{9137f768-a94b-415c-a1d3-be8978efaef0}" DisplayName="Status" Type="Text">
+        <CHOICES>
+        
+	
+	
+	<CHOICE>New</CHOICE><CHOICE>Approved</CHOICE><CHOICE>Rejected</CHOICE></CHOICES>
+        <Default>$Resources:core,_Status_NotStarted;</Default>
+      </Field><Field Name="StartDate1" ID="{3142c9e7-43c5-423e-9986-c3fe7fa38123}" DisplayName="StartDate" Type="DateTime" /><Field Name="EndDate1" ID="{a864ff61-dd4f-4d63-8ccd-14847a3ef788}" DisplayName="EndDate" Type="DateTime" />
+      <Field Name="ScheduleStatus" ID="{0fe1b390-6ad3-47ff-a224-d183e4aef68e}" DisplayName="ScheduleStatus" Type="Choice" >
+        <CHOICES>
+          <CHOICE>New</CHOICE>
+          <CHOICE>Approved</CHOICE>
+          <CHOICE>Rejected</CHOICE>
+        </CHOICES>
+      </Field>
+    </Fields>    
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        
+	
+	
+	
+	
+	
+	
+	<FieldRef Name="ID" /><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="EventID" /><FieldRef Name="ResourceID" /><FieldRef Name="Status" /><FieldRef Name="StartDate1" /><FieldRef Name="EndDate1" /><FieldRef Name="ScheduleStatus" /><FieldRef Name="Created" /><FieldRef Name="Author" /><FieldRef Name="Modified" /><FieldRef Name="Editor" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Workflow4App" DefaultFile="Workflow.xaml" SupportedTrustLevels="All" SupportedDeploymentScopes="AppPackage" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Workflow.xaml" Target="NewUniAdded\" Type="AppPackage" />
+  </Files>
+  <ExtensionData>
+    <ExtensionDataItem Key="WorkflowAssociation.EventSourceGUID" Value="Lists/EventList" />
+    <ExtensionDataItem Key="WorkflowAssociation.HistoryListId" Value="Lists/WorkflowHistoryList" />
+    <ExtensionDataItem Key="WorkflowAssociation.TaskListId" Value="Lists/WorkflowTaskList" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.Description" Value="OverdueEventsSendEmailWF" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.DisplayName" Value="OverdueEventsSendEmailWF" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.Enabled" Value="true" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.EventSourceGUID" Value="Lists/EventList" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.EventType" Value="ItemAdded" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.HistoryListId" Value="Lists/WorkflowHistoryList" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.Id" Value="fe1b19a1-8690-413b-8b5e-affcf60f685a" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.TaskListId" Value="Lists/WorkflowTaskList" />
+    <ExtensionDataItem Key="WorkflowAssociationItemUpdated.Description" Value="OverdueEventsSendEmailWF - ItemUpdated" />
+    <ExtensionDataItem Key="WorkflowAssociationItemUpdated.DisplayName" Value="OverdueEventsSendEmailWF - ItemUpdated" />
+    <ExtensionDataItem Key="WorkflowAssociationItemUpdated.Enabled" Value="true" />
+    <ExtensionDataItem Key="WorkflowAssociationItemUpdated.EventSourceGUID" Value="Lists/EventList" />
+    <ExtensionDataItem Key="WorkflowAssociationItemUpdated.EventType" Value="ItemUpdated" />
+    <ExtensionDataItem Key="WorkflowAssociationItemUpdated.HistoryListId" Value="" />
+    <ExtensionDataItem Key="WorkflowAssociationItemUpdated.Id" Value="2690a07e-c5e6-40f2-87f7-4bcd7149a4c0" />
+    <ExtensionDataItem Key="WorkflowAssociationItemUpdated.TaskListId" Value="" />
+    <ExtensionDataItem Key="WorkflowAssociationManualStart.Description" Value="OverdueEventsSendEmailWF - WorkflowStart" />
+    <ExtensionDataItem Key="WorkflowAssociationManualStart.DisplayName" Value="OverdueEventsSendEmailWF - WorkflowStart" />
+    <ExtensionDataItem Key="WorkflowAssociationManualStart.Enabled" Value="true" />
+    <ExtensionDataItem Key="WorkflowAssociationManualStart.EventSourceGUID" Value="Lists/EventList" />
+    <ExtensionDataItem Key="WorkflowAssociationManualStart.EventType" Value="WorkflowStart" />
+    <ExtensionDataItem Key="WorkflowAssociationManualStart.HistoryListId" Value="" />
+    <ExtensionDataItem Key="WorkflowAssociationManualStart.Id" Value="afbc83c8-e714-4075-bd21-bcdc17abc5e5" />
+    <ExtensionDataItem Key="WorkflowAssociationManualStart.TaskListId" Value="" />
+    <ExtensionDataItem Key="WorkflowDefinition.Description" Value="OverdueEventsSendEmailWF" />
+    <ExtensionDataItem Key="WorkflowDefinition.DisplayName" Value="OverdueEventsSendEmailWF" />
+    <ExtensionDataItem Key="WorkflowDefinition.Id" Value="fb05c421-4a63-46fb-a8ae-08482cd86eda" />
+    <ExtensionDataItem Key="WorkflowDefinition.RestrictAssociationToId" Value="Lists/EventList" />
+    <ExtensionDataItem Key="WorkflowDefinition.RestrictAssociationToType" Value="List" />
+  </ExtensionData>
+</ProjectItem>

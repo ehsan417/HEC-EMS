@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="UserRoles" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/UserRoles" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x01000f7994f0782e40acb0657b3248f3f671" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{63d448b2-77c1-491f-a058-56433891bcad}" Name="SuperAdmin" /><FieldRef ID="{be9e1f38-9985-45d7-993d-3c3329429db7}" Name="Attendee" /><FieldRef ID="{2cd2a464-89ff-46ae-b7d1-f4e0a76871a2}" Name="Admin" /><FieldRef ID="{569eb9ce-bdaf-417b-a65b-e6339880fe5a}" Name="AdminStatus" /><FieldRef ID="{bd5e100f-4551-44ff-95a7-9fd22abe6785}" Name="EventOrganizer" /><FieldRef ID="{df9f6d1d-8ba3-4147-9c4a-aca19b861aba}" Name="EventOrganizerStatus" /><FieldRef ID="{1c0ac55b-5644-4937-981c-66f591d3ba8c}" Name="Rep" /><FieldRef ID="{cafb3591-c141-46ac-9ff0-1eb0032a9770}" Name="RepStatus" /><FieldRef ID="{441d052b-d6e5-415a-90cf-d4a34a31285e}" Name="UserID" />
+    <FieldRef ID="{00a23ac7-bc31-4a18-b8c6-7895e6022c4e}" Name="Speaker" />
+      <FieldRef ID="{8f33a716-0e59-4007-a266-1ae9e8e1fe26}" Name="SpeakerStatus" />
+    </FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    
+      
+        
+      
+        
+        
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="SuperAdmin" ID="{63d448b2-77c1-491f-a058-56433891bcad}" DisplayName="SuperAdmin" Type="Boolean" /><Field Name="Attendee" ID="{be9e1f38-9985-45d7-993d-3c3329429db7}" DisplayName="Attendee" Type="Boolean" /><Field Name="Admin" ID="{2cd2a464-89ff-46ae-b7d1-f4e0a76871a2}" DisplayName="Admin" Type="Boolean" /><Field Name="AdminStatus" ID="{569eb9ce-bdaf-417b-a65b-e6339880fe5a}" DisplayName="AdminStatus" Type="Choice">
+        <CHOICES>
+          
+          
+          
+        <CHOICE>New</CHOICE><CHOICE>Approved</CHOICE><CHOICE>Rejected</CHOICE></CHOICES>
+      </Field><Field Name="EventOrganizer" ID="{bd5e100f-4551-44ff-95a7-9fd22abe6785}" DisplayName="EventOrganizer" Type="Boolean" /><Field Name="EventOrganizerStatus" ID="{df9f6d1d-8ba3-4147-9c4a-aca19b861aba}" DisplayName="EventOrganizerStatus" Type="Choice">
+        <CHOICES>
+          
+          
+          
+        <CHOICE>New</CHOICE><CHOICE>Approved</CHOICE><CHOICE>Rejected</CHOICE></CHOICES>
+      </Field><Field Name="Rep" ID="{1c0ac55b-5644-4937-981c-66f591d3ba8c}" DisplayName="Rep" Type="Boolean" /><Field Name="RepStatus" ID="{cafb3591-c141-46ac-9ff0-1eb0032a9770}" DisplayName="RepStatus" Type="Choice">
+          <CHOICES>
+            
+            
+            
+          <CHOICE>New</CHOICE><CHOICE>Approved</CHOICE><CHOICE>Rejected</CHOICE></CHOICES>
+        </Field><Field Name="UserID" ID="{441d052b-d6e5-415a-90cf-d4a34a31285e}" DisplayName="UserID" Type="Lookup" List="Lists/EMSUsers" ShowField="ID" />
+      <Field Name="Speaker" ID="{00a23ac7-bc31-4a18-b8c6-7895e6022c4e}" DisplayName="Speaker" Type="Boolean" />
+      <Field Name="SpeakerStatus" ID="{8f33a716-0e59-4007-a266-1ae9e8e1fe26}" DisplayName="SpeakerStatus" Type="Choice"/>
+      
+      </Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        
+        
+        
+          <FieldRef Name="ID" /><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="SuperAdmin" /><FieldRef Name="Attendee" /><FieldRef Name="Admin" /><FieldRef Name="AdminStatus" /><FieldRef Name="EventOrganizer" /><FieldRef Name="EventOrganizerStatus" /><FieldRef Name="Rep" /><FieldRef Name="RepStatus" /><FieldRef Name="UserID" /><FieldRef Name="Created" /><FieldRef Name="Author" /><FieldRef Name="Modified" /><FieldRef Name="Editor" />
+          <FieldRef Name="Speaker" /><FieldRef Name="SpeakerStatus" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

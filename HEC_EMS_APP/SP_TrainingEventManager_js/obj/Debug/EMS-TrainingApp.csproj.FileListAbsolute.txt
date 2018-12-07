@@ -1,0 +1,3 @@
+C:\Users\spfarmadmin\Documents\Visual Studio 2013\Projects\Event manager app\C#\SP_TrainingEventManager_js\bin\Debug\SP_TrainingEventManager_js.pdb
+C:\Users\spfarmadmin\Documents\Visual Studio 2013\Projects\Event manager app\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.dll
+C:\Users\spfarmadmin\Documents\Visual Studio 2013\Projects\Event manager app\C#\SP_TrainingEventManager_js\obj\Debug\SP_TrainingEventManager_js.pdb

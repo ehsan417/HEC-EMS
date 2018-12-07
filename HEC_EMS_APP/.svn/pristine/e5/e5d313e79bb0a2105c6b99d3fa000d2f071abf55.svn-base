@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Images\" Type="ElementManifest" />
+    <ProjectItemFile Source="AppIcon.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="calendar.gif" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Banner2.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Banner1.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="LoginPage.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="back_disabled.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="back_enabled.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="back_enabled_hover.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="forward_disabled.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="forward_enabled.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="forward_enabled_hover.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="sort_asc.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="sort_asc_disabled.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="sort_both.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="sort_desc.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="sort_desc_disabled.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="hecBanner.jpg" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="bg_grayheader.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="bg_header.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Close-icon.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="icon-search.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="icon_add.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="icon_addnew.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="icon_delete.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="icon_edit.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="icon_logout.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="icon_user.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="logo-header.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="logo_header.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="reject.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="accept.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="calender.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="feedback.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="avaialbe-events.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="myevents.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="manage-users.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="reports.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="role-request.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="rooms.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="send-email.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="sites.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Share.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="university.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="bill.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="events.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Recur.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="SchEvent.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Binary-Code-128.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="wait.gif" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="loader1.gif" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="loader2.gif" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="loader3.gif" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="loader4.gif" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="loader5.gif" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="loader6.gif" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Bill-Header.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="Footer Image.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="close_icon.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="close_icon_2.png" Target="Images\" Type="ElementFile" />
+    <ProjectItemFile Source="close_newIco.png" Target="Images\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

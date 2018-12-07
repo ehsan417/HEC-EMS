@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Workflow4App" DefaultFile="Workflow.xaml" SupportedTrustLevels="All" SupportedDeploymentScopes="AppPackage" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Workflow.xaml" Target="NewSiteAdded\" Type="AppPackage" />
+  </Files>
+  <ExtensionData>
+    <ExtensionDataItem Key="WorkflowAssociation.EventSourceGUID" Value="Lists/PSites" />
+    <ExtensionDataItem Key="WorkflowAssociation.HistoryListId" Value="Lists/WorkflowHistoryList" />
+    <ExtensionDataItem Key="WorkflowAssociation.TaskListId" Value="Lists/WorkflowTaskList" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.Description" Value="NewSiteAdded - ItemAdded" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.DisplayName" Value="NewSiteAdded - ItemAdded" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.Enabled" Value="true" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.EventSourceGUID" Value="Lists/PSites" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.EventType" Value="ItemAdded" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.HistoryListId" Value="Lists/WorkflowHistoryList" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.Id" Value="cbe6ad48-ad44-45dd-b24c-ad198d42683c" />
+    <ExtensionDataItem Key="WorkflowAssociationItemAdded.TaskListId" Value="Lists/WorkflowTaskList" />
+    <ExtensionDataItem Key="WorkflowAssociationItemUpdated.Enabled" Value="false" />
+    <ExtensionDataItem Key="WorkflowAssociationManualStart.Enabled" Value="false" />
+    <ExtensionDataItem Key="WorkflowDefinition.Description" Value="My 'NewSiteAdded' Workflow" />
+    <ExtensionDataItem Key="WorkflowDefinition.DisplayName" Value="NewSiteAdded" />
+    <ExtensionDataItem Key="WorkflowDefinition.Id" Value="9f9edd7c-2094-4306-b242-77c0eeb21a4b" />
+    <ExtensionDataItem Key="WorkflowDefinition.RestrictAssociationToId" Value="Lists/PSites" />
+    <ExtensionDataItem Key="WorkflowDefinition.RestrictAssociationToType" Value="List" />
+  </ExtensionData>
+</ProjectItem>

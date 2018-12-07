@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Organizations" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Organizations" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100fe829964e5a54daeb3eda290cb8a58ed" Name="ListFieldsContentType"><FieldRefs>
+    <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{f3ff4d97-953a-41ee-96dd-b167778fcd3e}" Name="ContactPerson" /><FieldRef ID="{ccad95dc-bdc5-467d-a74d-52d646e66ba4}" Name="OrgDescription" /><FieldRef ID="{c73ba6ce-e0e8-4803-bad4-63ac716412ed}" Name="OrgAddress" /><FieldRef ID="{6b1fc3e8-3cc0-459a-ac55-719aa41abda6}" Name="OrgPhone" /><FieldRef ID="{0ec04178-8ac6-493a-8a32-e7184e634a56}" Name="OrgStatus" /><FieldRef ID="{f04a2731-e8b2-459e-a3ad-d1a3880febb8}" Name="CustomCreatedBy" /><FieldRef ID="{1bc2a329-dc18-452c-b795-68d66e430b70}" Name="CustomModifiedby" /><FieldRef ID="{3febda02-834d-4ffa-b18a-6803f1a547fb}" Name="OrganizationType" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="ContactPerson" ID="{f3ff4d97-953a-41ee-96dd-b167778fcd3e}" DisplayName="Representatives" Type="UserMulti" Required="FALSE" Mult="TRUE" /><Field Name="OrgDescription" ID="{ccad95dc-bdc5-467d-a74d-52d646e66ba4}" DisplayName="OrgDescription" Type="Note" Required="FALSE" /><Field Name="OrgAddress" ID="{c73ba6ce-e0e8-4803-bad4-63ac716412ed}" DisplayName="OrgAddress" Type="Text" /><Field Name="OrgPhone" ID="{6b1fc3e8-3cc0-459a-ac55-719aa41abda6}" DisplayName="OrgPhone" Type="Text" /><Field Name="OrgStatus" ID="{0ec04178-8ac6-493a-8a32-e7184e634a56}" DisplayName="OrgStatus" Type="Choice">
+        <CHOICES>
+          
+          
+          
+        <CHOICE>New</CHOICE><CHOICE>Approved</CHOICE><CHOICE>Rejected</CHOICE></CHOICES>
+      </Field><Field Name="CustomCreatedBy" ID="{f04a2731-e8b2-459e-a3ad-d1a3880febb8}" DisplayName="CustomCreatedBy" Type="Text" /><Field Name="CustomModifiedby" ID="{1bc2a329-dc18-452c-b795-68d66e430b70}" DisplayName="CustomModifiedby" Type="Text" /><Field Name="OrganizationType" ID="{3febda02-834d-4ffa-b18a-6803f1a547fb}" DisplayName="OrganizationType" Type="Text" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        
+          <FieldRef Name="ID" /><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="ContactPerson" /><FieldRef Name="OrgDescription" /><FieldRef Name="OrgAddress" /><FieldRef Name="OrgPhone" /><FieldRef Name="OrgStatus" /><FieldRef Name="Created" /><FieldRef Name="Author" /><FieldRef Name="Modified" /><FieldRef Name="Editor" /><FieldRef Name="CustomCreatedBy" /><FieldRef Name="CustomModifiedby" /><FieldRef Name="OrganizationType" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

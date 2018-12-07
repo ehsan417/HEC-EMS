@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="0d19c457-9126-4bd4-9529-0872924cf367" SharePointProductVersion="15.0">
+  <FeatureManifests>
+    <FeatureManifest Location="SP_TrainingEventManager_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

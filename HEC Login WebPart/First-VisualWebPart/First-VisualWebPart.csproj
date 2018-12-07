@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FFB25B53-9FA1-4C71-9CE0-A40E349A9B37}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>First_VisualWebPart</RootNamespace>
+    <AssemblyName>First-VisualWebPart</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>True</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VisualWebPart1\VisualWebPart1.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VisualWebPart1.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.snk" />
+    <None Include="Style Library\codebase\sources\dhtmlxscheduler.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_active_links.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_agenda_view.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_all_timed.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_collision.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_container_autoresize.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_cookie.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_editors.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_expand.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_grid_view.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_html_templates.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_key_nav.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_layer.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_limit.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_map_view.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_minical.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_monthheight.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_multisection.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_multiselect.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_multisource.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_mvc.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_offline.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_outerdrag.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_pdf.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_quick_info.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_readonly.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_recurring.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_serialize.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_timeline.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_tooltip.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_treetimeline.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_units.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_url.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_week_agenda.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_wp.js.map" />
+    <None Include="Style Library\codebase\sources\ext\dhtmlxscheduler_year_view.js.map" />
+    <None Include="Style Library\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cb1060b4-e463-432e-aa9e-71ccac7e1fa3}</SharePointProjectItemId>
+    </None>
+    <None Include="VisualWebPart1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fea13a44-ba38-499f-8188-6f899c449b85}</SharePointProjectItemId>
+    </None>
+    <None Include="VisualWebPart1\VisualWebPart1.webpart" />
+    <None Include="VisualWebPart1\Elements.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Style Library\codebase\dhtmlxscheduler.css" />
+    <Content Include="Style Library\codebase\dhtmlxscheduler.js" />
+    <Content Include="Style Library\codebase\dhtmlxscheduler_classic.css" />
+    <Content Include="Style Library\codebase\dhtmlxscheduler_flat.css" />
+    <Content Include="Style Library\codebase\dhtmlxscheduler_glossy.css" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_active_links.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_agenda_view.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_all_timed.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_collision.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_container_autoresize.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_cookie.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_editors.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_expand.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_grid_view.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_html_templates.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_key_nav.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_layer.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_limit.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_map_view.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_minical.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_monthheight.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_multisection.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_multiselect.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_multisource.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_mvc.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_offline.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_outerdrag.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_pdf.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_quick_info.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_readonly.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_recurring.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_serialize.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_timeline.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_tooltip.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_treetimeline.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_units.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_url.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_week_agenda.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_wp.js" />
+    <Content Include="Style Library\codebase\ext\dhtmlxscheduler_year_view.js" />
+    <Content Include="Style Library\codebase\imgs\buttons.png" />
+    <Content Include="Style Library\codebase\imgs\but_repeat.gif" />
+    <Content Include="Style Library\codebase\imgs\calendar.gif" />
+    <Content Include="Style Library\codebase\imgs\clock_big.gif" />
+    <Content Include="Style Library\codebase\imgs\clock_small.gif" />
+    <Content Include="Style Library\codebase\imgs\collapse_expand_icon.gif" />
+    <Content Include="Style Library\codebase\imgs\controls.gif" />
+    <Content Include="Style Library\codebase\imgs\databg.png" />
+    <Content Include="Style Library\codebase\imgs\databg_now.png" />
+    <Content Include="Style Library\codebase\imgs\export_ical.png" />
+    <Content Include="Style Library\codebase\imgs\export_pdf.png" />
+    <Content Include="Style Library\codebase\imgs\icon.png" />
+    <Content Include="Style Library\codebase\imgs\images.png" />
+    <Content Include="Style Library\codebase\imgs\loading.gif" />
+    <Content Include="Style Library\codebase\imgs\resize_dots.png" />
+    <Content Include="Style Library\codebase\imgs_dhx_terrace\arrow_left.png" />
+    <Content Include="Style Library\codebase\imgs_dhx_terrace\arrow_right.png" />
+    <Content Include="Style Library\codebase\imgs_dhx_terrace\but_repeat.gif" />
+    <Content Include="Style Library\codebase\imgs_dhx_terrace\calendar.gif" />
+    <Content Include="Style Library\codebase\imgs_dhx_terrace\clock_big.gif" />
+    <Content Include="Style Library\codebase\imgs_dhx_terrace\clock_small.gif" />
+    <Content Include="Style Library\codebase\imgs_dhx_terrace\close_icon.png" />
+    <Content Include="Style Library\codebase\imgs_dhx_terrace\collapse_expand_icon.gif" />
+    <Content Include="Style Library\codebase\imgs_dhx_terrace\controls.png" />
+    <Content Include="Style Library\codebase\imgs_dhx_terrace\databg.png" />
+    <Content Include="Style Library\codebase\imgs_dhx_terrace\databg_now.png" />
+    <Content Include="Style Library\codebase\imgs_dhx_terrace\export_ical.png" />
+    <Content Include="Style Library\codebase\imgs_dhx_terrace\export_pdf.png" />
+    <Content Include="Style Library\codebase\imgs_dhx_terrace\resize_dots.png" />
+    <Content Include="Style Library\codebase\imgs_dhx_terrace\resizing.png" />
+    <Content Include="Style Library\codebase\imgs_flat\agenda_bg.gif" />
+    <Content Include="Style Library\codebase\imgs_flat\arrow_left.png" />
+    <Content Include="Style Library\codebase\imgs_flat\arrow_right.png" />
+    <Content Include="Style Library\codebase\imgs_flat\but_repeat.gif" />
+    <Content Include="Style Library\codebase\imgs_flat\calendar.gif" />
+    <Content Include="Style Library\codebase\imgs_flat\clock.png" />
+    <Content Include="Style Library\codebase\imgs_flat\clock_big.gif" />
+    <Content Include="Style Library\codebase\imgs_flat\clock_small.gif" />
+    <Content Include="Style Library\codebase\imgs_flat\close_icon.png" />
+    <Content Include="Style Library\codebase\imgs_flat\collapse_expand_icon.gif" />
+    <Content Include="Style Library\codebase\imgs_flat\controls.png" />
+    <Content Include="Style Library\codebase\imgs_flat\databg.png" />
+    <Content Include="Style Library\codebase\imgs_flat\databg_now.png" />
+    <Content Include="Style Library\codebase\imgs_flat\export_ical.png" />
+    <Content Include="Style Library\codebase\imgs_flat\export_pdf.png" />
+    <Content Include="Style Library\codebase\imgs_flat\resize_dots.png" />
+    <Content Include="Style Library\codebase\imgs_flat\resizing.png" />
+    <Content Include="Style Library\codebase\imgs_glossy\blue_tab.png" />
+    <Content Include="Style Library\codebase\imgs_glossy\blue_tab_wide.png" />
+    <Content Include="Style Library\codebase\imgs_glossy\buttons.gif" />
+    <Content Include="Style Library\codebase\imgs_glossy\but_repeat.gif" />
+    <Content Include="Style Library\codebase\imgs_glossy\calendar.gif" />
+    <Content Include="Style Library\codebase\imgs_glossy\clock_big.png" />
+    <Content Include="Style Library\codebase\imgs_glossy\clock_small.png" />
+    <Content Include="Style Library\codebase\imgs_glossy\collapse_expand_icon.gif" />
+    <Content Include="Style Library\codebase\imgs_glossy\controlls5.png" />
+    <Content Include="Style Library\codebase\imgs_glossy\databg.png" />
+    <Content Include="Style Library\codebase\imgs_glossy\databg_now.png" />
+    <Content Include="Style Library\codebase\imgs_glossy\event-bg.png" />
+    <Content Include="Style Library\codebase\imgs_glossy\export_ical.png" />
+    <Content Include="Style Library\codebase\imgs_glossy\export_pdf.png" />
+    <Content Include="Style Library\codebase\imgs_glossy\icon.png" />
+    <Content Include="Style Library\codebase\imgs_glossy\left-separator.png" />
+    <Content Include="Style Library\codebase\imgs_glossy\left-time-bg.png" />
+    <Content Include="Style Library\codebase\imgs_glossy\lightbox.png" />
+    <Content Include="Style Library\codebase\imgs_glossy\loading.gif" />
+    <Content Include="Style Library\codebase\imgs_glossy\move.png" />
+    <Content Include="Style Library\codebase\imgs_glossy\multi-days-bg.png" />
+    <Content Include="Style Library\codebase\imgs_glossy\second-top-days-bg.png" />
+    <Content Include="Style Library\codebase\imgs_glossy\top-days-bg.png" />
+    <Content Include="Style Library\codebase\imgs_glossy\top-separator.gif" />
+    <Content Include="Style Library\codebase\imgs_glossy\white_tab.png" />
+    <Content Include="Style Library\codebase\imgs_glossy\white_tab_wide.png" />
+    <Content Include="Style Library\codebase\locale\locale_ar.js" />
+    <Content Include="Style Library\codebase\locale\locale_be.js" />
+    <Content Include="Style Library\codebase\locale\locale_ca.js" />
+    <Content Include="Style Library\codebase\locale\locale_cn.js" />
+    <Content Include="Style Library\codebase\locale\locale_cs.js" />
+    <Content Include="Style Library\codebase\locale\locale_da.js" />
+    <Content Include="Style Library\codebase\locale\locale_de.js" />
+    <Content Include="Style Library\codebase\locale\locale_el.js" />
+    <Content Include="Style Library\codebase\locale\locale_en.js" />
+    <Content Include="Style Library\codebase\locale\locale_es.js" />
+    <Content Include="Style Library\codebase\locale\locale_fi.js" />
+    <Content Include="Style Library\codebase\locale\locale_fr.js" />
+    <Content Include="Style Library\codebase\locale\locale_he.js" />
+    <Content Include="Style Library\codebase\locale\locale_hu.js" />
+    <Content Include="Style Library\codebase\locale\locale_id.js" />
+    <Content Include="Style Library\codebase\locale\locale_it.js" />
+    <Content Include="Style Library\codebase\locale\locale_jp.js" />
+    <Content Include="Style Library\codebase\locale\locale_nb.js" />
+    <Content Include="Style Library\codebase\locale\locale_nl.js" />
+    <Content Include="Style Library\codebase\locale\locale_no.js" />
+    <Content Include="Style Library\codebase\locale\locale_pl.js" />
+    <Content Include="Style Library\codebase\locale\locale_pt.js" />
+    <Content Include="Style Library\codebase\locale\locale_ro.js" />
+    <Content Include="Style Library\codebase\locale\locale_ru.js" />
+    <Content Include="Style Library\codebase\locale\locale_si.js" />
+    <Content Include="Style Library\codebase\locale\locale_sk.js" />
+    <Content Include="Style Library\codebase\locale\locale_sv.js" />
+    <Content Include="Style Library\codebase\locale\locale_tr.js" />
+    <Content Include="Style Library\codebase\locale\locale_ua.js" />
+    <Content Include="Style Library\codebase\locale\recurring\locale_recurring_be.js" />
+    <Content Include="Style Library\codebase\locale\recurring\locale_recurring_cn.js" />
+    <Content Include="Style Library\codebase\locale\recurring\locale_recurring_cs.js" />
+    <Content Include="Style Library\codebase\locale\recurring\locale_recurring_da.js" />
+    <Content Include="Style Library\codebase\locale\recurring\locale_recurring_de.js" />
+    <Content Include="Style Library\codebase\locale\recurring\locale_recurring_el.js" />
+    <Content Include="Style Library\codebase\locale\recurring\locale_recurring_en.js" />
+    <Content Include="Style Library\codebase\locale\recurring\locale_recurring_es.js" />
+    <Content Include="Style Library\codebase\locale\recurring\locale_recurring_fi.js" />
+    <Content Include="Style Library\codebase\locale\recurring\locale_recurring_fr.js" />
+    <Content Include="Style Library\codebase\locale\recurring\locale_recurring_it.js" />
+    <Content Include="Style Library\codebase\locale\recurring\locale_recurring_nb.js" />
+    <Content Include="Style Library\codebase\locale\recurring\locale_recurring_nl.js" />
+    <Content Include="Style Library\codebase\locale\recurring\locale_recurring_pl.js" />
+    <Content Include="Style Library\codebase\locale\recurring\locale_recurring_pt.js" />
+    <Content Include="Style Library\codebase\locale\recurring\locale_recurring_ro.js" />
+    <Content Include="Style Library\codebase\locale\recurring\locale_recurring_ru.js" />
+    <Content Include="Style Library\codebase\locale\recurring\locale_recurring_sk.js" />
+    <Content Include="Style Library\codebase\locale\recurring\locale_recurring_sv.js" />
+    <Content Include="Style Library\codebase\locale\recurring\locale_recurring_ua.js" />
+    <Content Include="Style Library\codebase\locale\recurring\repeat_template_be.html" />
+    <Content Include="Style Library\codebase\locale\recurring\repeat_template_cn.html" />
+    <Content Include="Style Library\codebase\locale\recurring\repeat_template_de.html" />
+    <Content Include="Style Library\codebase\locale\recurring\repeat_template_el.html" />
+    <Content Include="Style Library\codebase\locale\recurring\repeat_template_en.html" />
+    <Content Include="Style Library\codebase\locale\recurring\repeat_template_es.html" />
+    <Content Include="Style Library\codebase\locale\recurring\repeat_template_fr.html" />
+    <Content Include="Style Library\codebase\locale\recurring\repeat_template_it.html" />
+    <Content Include="Style Library\codebase\locale\recurring\repeat_template_nl.html" />
+    <Content Include="Style Library\codebase\locale\recurring\repeat_template_ro.html" />
+    <Content Include="Style Library\codebase\locale\recurring\repeat_template_ru.html" />
+    <Content Include="Style Library\codebase\locale\recurring\repeat_template_sk.html" />
+    <Content Include="Style Library\codebase\Scripts\bootstrap-theme.min.css" />
+    <Content Include="Style Library\codebase\Scripts\bootstrap.min.css" />
+    <Content Include="Style Library\codebase\Scripts\bootstrap.min.js" />
+    <Content Include="Style Library\codebase\sources\dhtmlxscheduler.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_active_links.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_agenda_view.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_all_timed.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_collision.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_container_autoresize.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_cookie.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_editors.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_expand.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_grid_view.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_html_templates.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_key_nav.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_layer.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_limit.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_map_view.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_minical.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_monthheight.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_multisection.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_multiselect.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_multisource.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_mvc.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_offline.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_outerdrag.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_pdf.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_quick_info.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_readonly.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_recurring.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_serialize.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_timeline.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_tooltip.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_treetimeline.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_units.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_url.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_week_agenda.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_wp.js" />
+    <Content Include="Style Library\codebase\sources\ext\dhtmlxscheduler_year_view.js" />
+    <Content Include="Style Library\codebase\sources\skins\dhtmlxscheduler.css" />
+    <Content Include="Style Library\codebase\sources\skins\dhtmlxscheduler_classic.css" />
+    <Content Include="Style Library\codebase\sources\skins\dhtmlxscheduler_flat.css" />
+    <Content Include="Style Library\codebase\sources\skins\dhtmlxscheduler_glossy.css" />
+    <Content Include="Style Library\HEC\2015_1.jpg" />
+    <Content Include="Style Library\HEC\2015_2.jpg" />
+    <Content Include="Style Library\HEC\2015_3.jpg" />
+    <Content Include="Style Library\HEC\2015_4.jpg" />
+    <Content Include="Style Library\HEC\2015_5.jpg" />
+    <Content Include="Style Library\HEC\App.js" />
+    <Content Include="Style Library\HEC\black.png" />
+    <Content Include="Style Library\HEC\blue.png" />
+    <Content Include="Style Library\HEC\bootstrap.css" />
+    <Content Include="Style Library\HEC\bullet.png" />
+    <Content Include="Style Library\HEC\darkGreen.png" />
+    <Content Include="Style Library\HEC\facebook.png" />
+    <Content Include="Style Library\HEC\footer-bullet.png" />
+    <Content Include="Style Library\HEC\Green.png" />
+    <Content Include="Style Library\HEC\jquery.js" />
+    <Content Include="Style Library\HEC\js-image-slider.css" />
+    <Content Include="Style Library\HEC\js-image-slider.js" />
+    <Content Include="Style Library\HEC\lightpink.png" />
+    <Content Include="Style Library\HEC\loading.gif" />
+    <Content Include="Style Library\HEC\login_clock.png" />
+    <Content Include="Style Library\HEC\login_06.png" />
+    <Content Include="Style Library\HEC\App.css" />
+    <Content Include="Style Library\HEC\fadedlogo-forcontentbg.png" />
+    <Content Include="Style Library\HEC\lock.png" />
+    <Content Include="Style Library\HEC\login_10.png" />
+    <Content Include="Style Library\Elements.xml" />
+    <Content Include="Style Library\HEC\login_heading.png" />
+    <Content Include="Style Library\HEC\logo-header.png" />
+    <Content Include="Style Library\HEC\NewBannerBlackHec1.jpg" />
+    <Content Include="Style Library\HEC\Orange.png" />
+    <Content Include="Style Library\HEC\Pic1.jpg" />
+    <Content Include="Style Library\HEC\Pic10.jpg" />
+    <Content Include="Style Library\HEC\Pic11.jpg" />
+    <Content Include="Style Library\HEC\Pic12.jpg" />
+    <Content Include="Style Library\HEC\Pic13.jpg" />
+    <Content Include="Style Library\HEC\Pic14.jpg" />
+    <Content Include="Style Library\HEC\Pic15.jpg" />
+    <Content Include="Style Library\HEC\Pic16.jpg" />
+    <Content Include="Style Library\HEC\Pic2.jpg" />
+    <Content Include="Style Library\HEC\Pic3.jpg" />
+    <Content Include="Style Library\HEC\Pic4.jpg" />
+    <Content Include="Style Library\HEC\Pic5.jpg" />
+    <Content Include="Style Library\HEC\Pic6.jpg" />
+    <Content Include="Style Library\HEC\Pic7.jpg" />
+    <Content Include="Style Library\HEC\Pic8.jpg" />
+    <Content Include="Style Library\HEC\Pic9.jpg" />
+    <Content Include="Style Library\HEC\Picture1.jpg" />
+    <Content Include="Style Library\HEC\Picture1a.jpg" />
+    <Content Include="Style Library\HEC\Picture2.jpg" />
+    <Content Include="Style Library\HEC\Picture3.jpg" />
+    <Content Include="Style Library\HEC\Picture4.jpg" />
+    <Content Include="Style Library\HEC\Pink.png" />
+    <Content Include="Style Library\HEC\purple.png" />
+    <Content Include="Style Library\HEC\Red.png" />
+    <Content Include="Style Library\HEC\skyBlue.png" />
+    <Content Include="Style Library\HEC\twitter.png" />
+    <Content Include="VisualWebPart1\VisualWebPart1.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>VisualWebPart1.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Compile Include="VisualWebPart1\VisualWebPart1.ascx.cs">
+      <DependentUpon>VisualWebPart1.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{0c10fccc-8181-40ae-8646-2b9250e5e28e}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{074520b1-4f41-4a91-8e57-5309516f56aa}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="First_VisualWebPart.VisualWebPart1.VisualWebPart1, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Event Management System-XYZ</property>
+        <property name="Description" type="string">Login and SignUp to App WebPart</property>
+        <property name="ListName" type="string">/Lists/Ticket%20Details/AllItems.aspx</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

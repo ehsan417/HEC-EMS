@@ -1,0 +1,508 @@
+﻿/* header */
+.top-header {
+    /*padding: 15px 10px;*/
+    height: 120px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 32px;
+    display: block;
+    vertical-align: middle;
+    border-bottom: solid 9px #60A384;
+}
+
+    .top-header span {
+        display: block;
+        margin-left: 20px;
+        float: left;
+        line-height: 83px;
+    }
+
+    .top-header img {
+        float: left;
+    }
+/* content area */
+.pHeadingCustom {
+    background-color: #1383b4;
+    font-family: Arial;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+    line-height: 18px;
+    clear: both;
+}
+
+.addCustomButton {
+    background-image: url(icon_addnew.png);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    height: 25px;
+    font-family: Arial;
+    color: #000;
+    vertical-align: middle;
+    line-height: 25px;
+    display: inline;
+    float: left;
+    top: 25px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+    background-color: #f1f1f1 !important;
+    font-family: Arial;
+    color: #212121;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    border-bottom: none !important;
+    border-top: solid 1px #bfbfbf !important;
+    border-left: solid 1px #bfbfbf;
+}
+
+table.dataTable tbody td {
+    font-family: Arial;
+    color: #1e1e1e;
+    font-size: 14.34px;
+    font-weight: 400;
+    text-align: left;
+    border-bottom: none !important;
+    border-left: solid 1px #bfbfbf;
+    border-top: solid 1px #bfbfbf !important;
+}
+
+table.dataTable tbody tr, table.dataTable.display tbody tr > .sorting_1 {
+    background-color: #fff !important;
+}
+
+    table.dataTable tbody tr.odd, table.dataTable.display tbody tr.odd > .sorting_1 {
+        background-color: #d4e8f1 !important;
+    }
+
+table.dataTable.no-footer {
+    border-bottom: solid 1px #bfbfbf !important;
+}
+
+.customSearch {
+    display: block;
+    float: right;
+}
+
+.hideIt {
+    display: none;
+}
+
+.dataTables_filter input {
+    border: solid 1px #bfbfbf;
+    background-image: url(icon-search.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 5px;
+    padding-left: 30px;
+    font-family: Arial;
+    font-size: 14px;
+    color: #929292;
+    height: 30px;
+}
+
+
+
+.btn-emailcode {
+    background-color: #4285f4 !important;
+    border: solid 1px #4285f4 !important;
+    float: right;
+    margin-left: 10px;
+    font-family: Arial !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    color: #fff !important;
+    -moz-border-radius: 4px !important;
+    -webkit-border-radius: 4px !important;
+    border-radius: 4px !important;
+}
+
+    .btn-emailcode:hover {
+        color: #fff !important;
+        border: solid 1px #bfbfbf !important;
+    }
+
+
+/*
+.btn-cancel{
+    background-color:#be9401!important;
+    border:solid 1px #be9401!important;
+}
+.btn-save{
+    background-color:#015523!important;
+    border:solid 1px #015523!important;
+}
+.btn-delete{
+    background-color:#830202!important;
+    border:solid 1px #830202!important;
+}
+*/
+.btn-cancel, .btn-save, .btn-delete {
+    background-color: #4D4D4D !important;
+    border: solid 1px #4D4D4D !important;
+    float: right;
+    margin-left: 10px;
+    font-family: Arial !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    color: #fff !important;
+    -moz-border-radius: 4px !important;
+    -webkit-border-radius: 4px !important;
+    border-radius: 4px !important;
+}
+
+    .btn-cancel:hover, .btn-save:hover, .btn-delete:hover {
+        color: #fff !important;
+        border: solid 1px #bfbfbf !important;
+    }
+
+.btn-signup {
+    font-family: Arial;
+    font-size: 12px !important;
+    color: #034889 !important;
+    font-weight: bold;
+    float: right;
+    margin-right: 5px;
+    line-height: 32px;
+    vertical-align: middle;
+}
+
+
+.LoginWrapper {
+    position: relative;
+    width: 318px;
+    float: right;
+}
+
+    .LoginWrapper img {
+        float: right;
+    }
+
+    .LoginWrapper table {
+        margin: 0 auto;
+    }
+
+.LoginBack {
+    background-image: url(fadedlogo-forcontentbg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+}
+
+.frmInput {
+    width: 300px;
+}
+
+.LoginTable {
+    width: 100%;
+    background-color: #fff;
+}
+
+.loginTitle {
+    width: 100%;
+    padding: 10px 0;
+    color: #454344; /*#636363*/
+    font-size: 16px;
+    font-family: Arial;
+    display: block;
+    font-weight: bold;
+}
+
+.LoginTable input[type=text] {
+    width: 225px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #b2b2b2;
+    font-family: arial;
+    font-size: 14px;
+    color: #6a6a6a;
+    padding: 8px;
+}
+
+.LoginTable textarea {
+    width: 225px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #b2b2b2;
+    font-family: arial;
+    font-size: 14px;
+    color: #6a6a6a;
+    padding: 8px;
+}
+
+.LoginTable select {
+    width: 242px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #b2b2b2;
+    font-family: arial;
+    font-size: 14px;
+    color: #6a6a6a;
+    padding: 8px;
+}
+
+.LoginWelcome {
+    display: block;
+    float: left;
+}
+
+    .LoginWelcome img {
+        width: 700px;
+    }
+
+.menuBar {
+    background-image: url(login_heading.png); /*url(login_06.png)*/
+    background-repeat: repeat-x;
+    height: 52px;
+    font-family: Arial;
+    font-size: 21px;
+    color: #3b3b3b;
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
+    .menuBar span {
+        color: #9a9a9a;
+        font-size: 14px;
+        display: inline;
+    }
+
+.SignupWrapper {
+    width: auto;
+}
+
+    .SignupWrapper td {
+        padding: 10px;
+    }
+
+    .SignupWrapper .lblHint td {
+        padding: 0 20px;
+        text-align: right;
+    }
+
+.hintTop a, .hintTop a:visited {
+    font-size: 14px !important;
+    vertical-align: bottom;
+    color: #034889 !important;
+    padding-top: 10px !important;
+    display: block;
+}
+
+.hintBottom a, .hintBottom a:visited {
+    font-size: 14px !important;
+    vertical-align: top;
+    color: #B90506 !important;
+    padding-bottom: 10px !important;
+    display: block;
+}
+
+.lblForm {
+    font-family: Arial;
+    font-size: 14px;
+    color: #676767;
+    text-align: right;
+    width: 215px;
+    padding: 10px 0 !important;
+}
+
+.buttons {
+    width: 381px;
+    margin: 0 auto;
+}
+
+#LoginArea {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.requiredField {
+    color: red;
+}
+
+/* Hide top bar, logo, side bar*/
+#s4-titlerow, #s4-ribbonrow, #suiteBar, #suiteBarDelta, #sideNavBox {
+    display: none !important;
+}
+
+#titlerow, #ribbonrow, #suiteBar, #suiteBarDelta, #sideNavBox, #footer {
+    display: none !important;
+}
+
+#contentBox {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.fullPageLayout {
+    width: 1024px !important;
+    max-width: 1024px !important;
+}
+
+.ms-fullWidth {
+    margin: 0 auto;
+}
+
+.inline {
+    float: right;
+    display: inline !important;
+    width: 10% !important;
+    margin-right: 10px;
+}
+
+
+
+/* Calender */
+.dhx_cal_date {
+    font-family: Arial !important;
+    font-size: 24px !important;
+    font-weight: bold !important;
+    color: #000 !important;
+}
+
+.dhx_cal_header .dhx_scale_bar {
+    font-family: Arial !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    color: #000 !important;
+}
+
+.dhx_cal_data table td {
+    background-color: #fff !important;
+}
+
+    .dhx_cal_data table td div {
+        font-size: 11px !important;
+    }
+
+
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: 0px;
+}
+
+.col-lg-1 {
+    text-align: center;
+}
+
+.icon_delete {
+    display: none !important;
+}
+
+.dhx_delete_btn_set {
+    display: none !important;
+}
+
+.dhx_time {
+    display: none !important;
+}
+
+.dhx_cal_event_line_start {
+    color: white;
+}
+
+.dhx_cal_data table tbody tr td:first-child {
+    border-left: 1px solid #CECECE;
+}
+
+@media screen and (max-width: 800px) {
+    .dhx_cal_data {
+        width: 98.1% !important;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    .dhx_cal_data {
+        /*width: 98.5% !important;*/
+        width: 98% !important;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1800px) {
+    .dhx_cal_data {
+        /*width: 98.5% !important;*/
+        /*width: 98.45% !important;*/
+        width: 97.48% !important;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .dhx_cal_data {
+        /*width: 99% !important;*/
+        width: 97.4% !important;
+    }
+}
+
+.margintop {
+    margin-top: 20px !important;
+}
+
+.dhx_cal_event_line, .dhx_cal_event_clear {
+    color: white !important;
+}
+
+.customtitle {
+    font-weight: bold !important;
+    color: white !important;
+}
+
+#slider div.mc-caption {
+    color: white !important;
+    font-weight: normal !important;
+    font-size: large !important;
+    text-align: left !important;
+    margin-left: 5px !important;
+}
+
+#slider div.navBulletsWrapper {
+    top: 260px !important;
+}
+
+.forground {
+    z-index: 1 !important;
+}
+
+.footer {
+    background-color: #63a284 !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top: 10px !important;
+}
+
+.footer-a {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+
+.icons {
+    width: 25px !important;
+    height: 25px !important;
+}
+
+
+.fmenu li {
+  background-image: url("footer-bullet.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  /*border-bottom: 1px solid #464646;*/
+  padding: 6px 0 5px 15px;
+  /*width: 135px;*/
+}
+.cfmenucap {
+  color: #22a6d7;
+  font-family: "Arial";
+  font-size: 17px;
+  /*font-style: italic;*/
+  font-weight: bold;
+  margin-left: 25px;
+  text-align: left;
+}
